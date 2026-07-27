@@ -1,4 +1,4 @@
-#include <iostream>
+#include <iostream> //Extremely important for std::cout and std::cin as without this line, the compiler won't know what those 2 commands mean
 
 int main() 
 {
