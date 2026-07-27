@@ -26,6 +26,11 @@ int main()
   std::cin >> nights;
 
   double totalCharge { (childrenCost*children) + (teenagerCost*teenagers) + (adultCost*adults) + (nightCost*nights) + extraCharge }; //Calculates the total booking charge to be paid in order to get access
+
+  //displays the booking room details of a particular room
+  std::cout << "So for this booking roon, there's " << children << " children, " << teenagers << " teenagers, " << adults << " adults and they're staying for " << nights << " nights\n";
+  
   std::cout << "The total cost of this booking is £" << totalCharge << '\n';
+  return 0;
   
 }
