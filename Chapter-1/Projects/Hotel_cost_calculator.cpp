@@ -31,6 +31,6 @@ int main()
   std::cout << "So for this booking roon, there's " << children << " children, " << teenagers << " teenagers, " << adults << " adults and they're staying for " << nights << " nights\n";
   
   std::cout << "The total cost of this booking is £" << totalCharge << '\n';
-  return 0;
+  return 0; 
   
 }
