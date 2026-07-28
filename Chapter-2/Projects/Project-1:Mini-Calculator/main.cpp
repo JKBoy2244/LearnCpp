@@ -12,5 +12,6 @@ int main() {
   char operatorSign = operatorSelect();       //The compiler runs this method in sequential order
   int valueTwo = secondInteger();
   calculate(valueOne, valueTwo, operatorSign);
+  return 0;
   
 }
