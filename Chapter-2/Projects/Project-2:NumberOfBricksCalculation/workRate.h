@@ -8,7 +8,7 @@ void workRate(int numberOfBricks) {
   cin >> numberOfWorkers;
 
   cout << " ---------------------------------------------------------------------------------------------------------------------------------- \n";
-  double days = {numberOfBricks / numberOfWorkers};                   //This is slightly outside the syllabus but only this (rest is in learncpp ch. 2 syllabus but it's to prevent calculation error - static_cast<double>
+  double days = static_cast<double>(numberOfBricks) / numberOfWorkers;                   //This is slightly outside the syllabus but only this (rest is in learncpp ch. 2 syllabus but it's to prevent calculation error 
   double hours {days * 24};
   double minutes {hours * 60};                                                          //Conversion rates
   double seconds {minutes * 60};
