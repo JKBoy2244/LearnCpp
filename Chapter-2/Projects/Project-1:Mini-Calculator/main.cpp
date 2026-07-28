@@ -4,7 +4,7 @@ using namespace std;
 int firstInteger();
 int secondInteger();
 char operatorSelect();
-void calculate(valueOne, valueTwo, operatorSign);
+void calculate(int valueOne, int valueTwo, char operatorSign);
 
 int main() {
 
