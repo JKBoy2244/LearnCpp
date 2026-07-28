@@ -3,8 +3,8 @@ using namespace std;
 
 #include "HouseVolume.h"
 #include "oneBrickVolume.h"
-#include totalNumberOfBricks.h"
-#include workRate.h"
+#include "totalNumberOfBricks.h"
+#include "workRate.h"
 
 int main() {
   
