@@ -1,6 +1,11 @@
 #include <iostream>
 using namespace std;
 
+#define add
+#define subtract
+#define multiply
+#define divide 
+
 void calculate(int valueOne, int valueTwo, char operatorSign) {
 
     switch (operatorSign) {
