@@ -65,17 +65,17 @@ int totalNumberOfBricks(double houseVolume, double brickVolume) {
 
   int totalNumberOfBricks (houseVolume / brickVolume); 
   cout << "The total Number of whole bricks you need is " << totalNumberOfBricks << " bricks.\n";                                     //Total number of whole bricks required to build a full house
-  return totalNumberOfBricks;
+  return numberOfBricks;
 }
 
-void workRate(int totalNumberOfBricks) {
+void workRate(int numberOfBricks) {
 
   cout << "Enter the number of workers for this building project?\n";                                     //The number of workers affect how quickly it can take to build a house. More workers mean less time (& vice-versa)
   int numberOfWorkers {};
   cin >> numberOfWorkers;
 
   cout << " ---------------------------------------------------------------------------------------------------------------------------------- \n";
-  double days {totalNumberOfBricks / numberOfWorkers};
+  double days {numberOfBricks / numberOfWorkers};
   double hours {days * 24};
   double minutes {hours * 60};
   double seconds {minutes * 60};
@@ -83,7 +83,7 @@ void workRate(int totalNumberOfBricks) {
   double months {weeks / 4.33};
   double years {months / 12};
 
-  cout << "The total Number of whole bricks you need is " << totalNumberOfBricks << " bricks.\n";
+  cout << "The total Number of whole bricks you need is " << numberOfBricks << " bricks.\n";
   cout << "The total number of seconds this will take to build a full house from scratch is: " << seconds << " seconds\n";                //This block part tells you the time taken to complete the work in various formats
   cout << "The total number of minutes this will take to build a full house from scratch is: " << minutes << " minutes\n";
   cout << "The total number of hours this will take to build a full house from scratch is: " << hours << " hours\n";
@@ -102,8 +102,8 @@ int main() {
   double prismVolume = triangularPrismHouseVolume(cuboidLength, cuboidWidth);                       //Compiler executes this main function in sequential order
   double houseVolume = totalVolume(cuboidVolume, prismVolume);
   double brickVolume = oneBrickVolume();
-  int totalNumberOfBricks = totalNumberOfBricks(houseVolume, brickVolume);
-  workRate(totalNumberOfBricks);
+  int numberOfBricks = totalNumberOfBricks(houseVolume, brickVolume);
+  workRate(numberOfBricks);
   
   return 0;
 }
