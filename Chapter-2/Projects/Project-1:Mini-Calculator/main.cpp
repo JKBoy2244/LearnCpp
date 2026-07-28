@@ -2,9 +2,9 @@
 using namespace std;
 
 #define add
-//#define subtract
-//#define multiply
-//#define divide
+#define subtract
+#define multiply
+#define divide
 
 int firstInteger() {
 
