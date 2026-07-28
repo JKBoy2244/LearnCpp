@@ -23,3 +23,5 @@ double oneBrickVolume() {                                                       
   return brickVolume;
   
 }
+
+#endif
