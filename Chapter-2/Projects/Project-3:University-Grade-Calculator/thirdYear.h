@@ -1,5 +1,3 @@
-#include <iostream>
-
 #ifndef THIRDYEAR
 #define THIRDYEAR
 
