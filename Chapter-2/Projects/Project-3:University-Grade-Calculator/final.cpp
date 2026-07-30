@@ -1,3 +1,5 @@
+#include <iostream>
+using namespace std;
 
 void final(double firstYearWeightedGrade, double secondYearWeightedGrade, double thirdYearWeightedGrade) {
 
