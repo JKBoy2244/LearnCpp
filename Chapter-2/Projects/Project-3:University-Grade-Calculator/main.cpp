@@ -13,10 +13,10 @@ void final(double first, double second, double third);
 int main() {
 
   double firstYearGrade = firstYear();
-  double firstYearWeightedGrade = firstYearWeighted(firstYearGrade);                                    //Compiler runs the program here in sequential order
+  double firstYearWeightedGrade = firstYear(firstYearGrade);                                    //Compiler runs the program here in sequential order
   double secondYearGrade = secondYear();
-  double secondYearWeightedGrade = secondYearWeighted(secondYearGrade);
+  double secondYearWeightedGrade = secondYear(secondYearGrade);
   double thirdYearGrade = thirdYear();
-  double thirdYearWeightedGrade = thirdYearWeighted(thirdYearGrade);
+  double thirdYearWeightedGrade = thirdYear(thirdYearGrade);
   final(firstYearWeightedGrade, secondYearWeightedGrade, thirdYearWeightedGrade);
 }
