@@ -1,6 +1,7 @@
 #include <iostream>
-#include "thirdYear.h"
 using namespace std;
+
+#include "thirdYear.h"
 
 double thirdYearWeighted(double thirdYearGrade) {
 
