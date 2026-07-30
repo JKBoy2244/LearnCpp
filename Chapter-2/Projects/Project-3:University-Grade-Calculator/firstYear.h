@@ -1,5 +1,3 @@
-#include <iostream>
-
 #ifndef FIRSTYEAR
 #define FIRSTYEAR
 
