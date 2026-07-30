@@ -1,4 +1,3 @@
-#include <iostream>
 
 void final(double firstYearWeightedGrade, double secondYearWeightedGrade, double thirdYearWeightedGrade) {
 
