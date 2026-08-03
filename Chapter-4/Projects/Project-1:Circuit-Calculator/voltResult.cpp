@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-#include "voltResult.h";
+#include "voltResult.h"
 
 void voltResult(int voltageOption_one) {
 
