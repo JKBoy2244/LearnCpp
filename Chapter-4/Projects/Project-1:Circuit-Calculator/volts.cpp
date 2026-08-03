@@ -17,5 +17,8 @@ int volts(char voltage) {
 
     int voltageOption_one = voltageOption;
     return voltageOption_one;
-  }  
+    
+  }  else {
+       cout << "Invalid input!\n";
+  }
 }
