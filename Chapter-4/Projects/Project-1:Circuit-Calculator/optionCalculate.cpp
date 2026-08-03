@@ -19,22 +19,25 @@ char optionCalculate() {
     return voltage;
   }
 
-  if (optionLetter == 'P') {
+  else if (optionLetter == 'P') {
 
     char power = optionLetter;
     return power;
   }
   
-  if (optionLetter == 'C') {
+  else if (optionLetter == 'C') {
 
     char charge = optionLetter;
     return charge;
   }
   
-  if (optionLetter == 'E') {
+  else if (optionLetter == 'E') {
 
     char energy = optionLetter;
     return energy;
+    
+  } else {
+       cout << "Invalid input!\n";
   }
 }
 
