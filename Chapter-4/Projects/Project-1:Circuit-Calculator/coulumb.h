@@ -1,6 +1,6 @@
 #ifndef COULUMB
 #define COULUMB
 
-int COULUMB(char charge);
+int coulumb(char charge);
 
 #endif
