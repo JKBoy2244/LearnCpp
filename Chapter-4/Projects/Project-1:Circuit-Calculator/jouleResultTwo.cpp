@@ -13,10 +13,10 @@ void jouleResultTwo(int energyOption_two) {
   double current {};
   cin >> current;
 
-  cout << "Enter the time of the circuit\n";
+  cout << "Enter the time of the circuit in milliseconds in integer form\n";
   unsigned int time {};
   cin >> time;
 
-  double energy {voltage * current * static_cast<double>time};
+  double energy {voltage * current * (static_cast<double>(time) / 1000)};
   cout << "Energy result of the circuit is " << energy << " joules\n";
 }
