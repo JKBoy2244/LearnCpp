@@ -19,15 +19,17 @@ int watts(char power) {
     return powerOption_one;
   }  
 
-  if (powerOption == 2) {
+  else if (powerOption == 2) {
 
     int powerOption_two = powerOption;
     return powerOption_two;
   }  
 
-  if (powerOption == 3) {
+  else if (powerOption == 3) {
 
     int powerOption_three = powerOption;
     return powerOption_three;
-  }  
+  }  else {
+       cout << "Invalid input!\n";
+  }
 }
