@@ -209,3 +209,85 @@ void wattResultThree(int powerOption_three) {
   double power {(voltage * voltage) / resistance};
   cout << "Power result of the circuit is " << power << " volts\n";
 }
+
+void jouleResultOne(int energyOption_one) {
+
+  cout << "Enter the power of the circuit\n";
+  double power {};
+  cin >> power;
+
+  cout << "Enter the time of the circuit\n";
+  unsigned double time {};
+  cin >> time;
+
+  double energy {power * time};
+  cout << "Energy result of the circuit is " << energy << " volts\n";
+}
+
+void jouleResultTwo(int energyOption_two) {
+
+  cout << "Enter the voltage of the circuit\n";
+  double voltage {};
+  cin >> voltage;
+
+  cout << "Enter the current of the circuit\n";
+  double current {};
+  cin >> current;
+
+  cout << "Enter the time of the circuit\n";
+  unsigned double time {};
+  cin >> time;
+
+  double energy {voltage * current * time};
+  cout << "Energy result of the circuit is " << energy << " volts\n";
+}
+
+void jouleResultThree(int energyOption_three) {
+
+  cout << "Enter the voltage of the circuit\n";
+  double voltage {};
+  cin >> voltage;
+
+  cout << "Enter the charge of the circuit\n";
+  double charge {};
+  cin >> charge;
+
+  double energy {charge * voltage};
+  cout << "Energy result of the circuit is " << energy << " volts\n";
+}
+
+void jouleResultFour(int energyOption_four) {
+
+  cout << "Enter the current of the circuit\n";
+  double current {};
+  cin >> current;
+
+  cout << "Enter the resistance of the circuit\n";
+  double resistance {};
+  cin >> resistance;
+
+  cout << "Enter the time of the circuit\n";
+  unsigned double time {};
+  cin >> time;
+
+  double energy {current * current * resistance * time};
+  cout << "Energy result of the circuit is " << energy << " volts\n";
+}
+
+void jouleResultFive(int energyOption_five) {
+
+  cout << "Enter the voltage of the circuit\n";
+  double voltage {};
+  cin >> voltage;
+
+  cout << "Enter the resistance of the circuit\n";
+  double resistance {};
+  cin >> resistance;
+
+  cout << "Enter the time of the circuit\n";
+  unsigned double time {};
+  cin >> time;
+
+  double energy {(voltage * voltage * time) / resistance};
+  cout << "Energy result of the circuit is " << energy << " volts\n";
+}
