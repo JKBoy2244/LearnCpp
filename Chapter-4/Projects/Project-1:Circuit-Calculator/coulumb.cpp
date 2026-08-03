@@ -15,7 +15,7 @@ int coulumb(char charge) {
 
   if (chargeOption == 1) {
 
-    int chargeOption_one = voltageOption;
+    int chargeOption_one = chargeOption;
     return chargeOption_one;
   }  
 }
