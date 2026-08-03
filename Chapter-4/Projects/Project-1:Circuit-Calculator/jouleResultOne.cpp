@@ -10,9 +10,9 @@ void jouleResultOne(int energyOption_one) {
   cin >> power;
 
   cout << "Enter the time of the circuit\n";
-  unsigned double time {};
+  double time {};
   cin >> time;
 
   double energy {power * time};
-  cout << "Energy result of the circuit is " << energy << " volts\n";
+  cout << "Energy result of the circuit is " << energy << " joules\n";
 }
