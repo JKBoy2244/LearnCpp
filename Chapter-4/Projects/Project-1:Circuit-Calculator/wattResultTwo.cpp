@@ -14,5 +14,5 @@ void wattResultTwo(int powerOption_two) {
   cin >> resistance;
 
   double power {current * current * resistance};
-  cout << "Power result of the circuit is " << power << " volts\n";
+  cout << "Power result of the circuit is " << power << " watts\n";
 }
