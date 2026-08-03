@@ -19,27 +19,29 @@ int joules(char energy) {
     return energyOption_one;
   }  
 
-  if (energyOption == 2) {
+  else if (energyOption == 2) {
 
     int energyOption_two = energyOption;
     return energyOption_two;
   } 
 
-  if (energyOption == 3) {
+  else if (energyOption == 3) {
 
     int energyOption_three = energyOption;
     return energyOption_three;
   }
 
-  if (energyOption == 4) {
+  else if (energyOption == 4) {
 
     int energyOption_four = energyOption;
     return energyOption_four;
   }
 
-  if (energyOption == 5) {
+  else if (energyOption == 5) {
 
     int energyOption_five = energyOption;
     return energyOption_five;
+  } else {
+       cout << "Invalid input!\n";
   }
 }
