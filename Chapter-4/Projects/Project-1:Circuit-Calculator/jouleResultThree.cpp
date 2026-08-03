@@ -14,5 +14,5 @@ void jouleResultThree(int energyOption_three) {
   cin >> charge;
 
   double energy {charge * voltage};
-  cout << "Energy result of the circuit is " << energy << " volts\n";
+  cout << "Energy result of the circuit is " << energy << " joules\n";
 }
