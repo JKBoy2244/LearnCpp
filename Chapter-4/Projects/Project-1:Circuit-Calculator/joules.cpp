@@ -7,7 +7,7 @@ int joules(char energy) {
 
   cout << "Since you choose energy, choose either option 1, 2, 3, 4 or 5 below to continue\n";
   cout << "---------------------------------------------------------------------------------------------------------";
-  cout << "1). P = VI, 2). P = (I*I)*R, 3). P = (V*V)/R\n";
+  cout << "1). E = Pt, 2). E = VIt, 3). E = QV, 4). E = (I*I)Rt 5). E = (V*V*t) / R\n";
   cout << "---------------------------------------------------------------------------------------------------------";
 
   int energyOption {};
