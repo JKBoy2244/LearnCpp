@@ -1,6 +1,6 @@
-#ifndef CHARGE
-#define CHARGE
+#ifndef COULUMB
+#define COULUMB
 
-int charge(char charge);
+int COULUMB(char charge);
 
 #endif
