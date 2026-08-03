@@ -1,6 +1,6 @@
-#ifndef POW
-#define POW
+#ifndef WATTS
+#define WATTS
 
-int pow(char power);
+int watts(char power);
 
 #endif
