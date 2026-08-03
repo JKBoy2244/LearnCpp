@@ -14,5 +14,5 @@ void coulumbResult(int chargeOption_one) {
   cin >> time;
 
   double charge {current * time};
-  cout << "Charge result of the circuit is " << charge << " volts\n";
+  cout << "Charge result of the circuit is " << charge << " coulumbs\n";
 }
