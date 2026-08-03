@@ -15,25 +15,25 @@ char optionCalculate() {
 
   if (optionLetter == 'V') {
 
-    voltage = optionLetter;
+    char voltage = optionLetter;
     return voltage;
   }
 
   if (optionLetter == 'P') {
 
-    power = optionLetter;
+    char power = optionLetter;
     return power;
   }
   
   if (optionLetter == 'C') {
 
-    charge = optionLetter;
+    char charge = optionLetter;
     return charge;
   }
   
   if (optionLetter == 'E') {
 
-    energy = optionLetter;
+    char energy = optionLetter;
     return energy;
   }
 }
