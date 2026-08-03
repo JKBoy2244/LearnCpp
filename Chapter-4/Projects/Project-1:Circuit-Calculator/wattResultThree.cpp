@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-#include "wattResultThree.h";
+#include "wattResultThree.h"
 
 void wattResultThree(int powerOption_three) {
 
