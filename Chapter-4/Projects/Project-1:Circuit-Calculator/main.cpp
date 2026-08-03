@@ -217,7 +217,7 @@ void jouleResultOne(int energyOption_one) {
   cin >> power;
 
   cout << "Enter the time of the circuit\n";
-  unsigned double time {};
+  double time {};
   cin >> time;
 
   double energy {power * time};
@@ -235,7 +235,7 @@ void jouleResultTwo(int energyOption_two) {
   cin >> current;
 
   cout << "Enter the time of the circuit\n";
-  unsigned double time {};
+  double time {};
   cin >> time;
 
   double energy {voltage * current * time};
@@ -267,7 +267,7 @@ void jouleResultFour(int energyOption_four) {
   cin >> resistance;
 
   cout << "Enter the time of the circuit\n";
-  unsigned double time {};
+  double time {};
   cin >> time;
 
   double energy {current * current * resistance * time};
@@ -285,7 +285,7 @@ void jouleResultFive(int energyOption_five) {
   cin >> resistance;
 
   cout << "Enter the time of the circuit\n";
-  unsigned double time {};
+  double time {};
   cin >> time;
 
   double energy {(voltage * voltage * time) / resistance};
