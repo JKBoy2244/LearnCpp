@@ -17,5 +17,7 @@ int coulumb(char charge) {
 
     int chargeOption_one = chargeOption;
     return chargeOption_one;
-  }  
+  }  else {
+       cout << "Invalid input!\n";
+  }
 }
