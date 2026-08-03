@@ -15,43 +15,43 @@ char unitChoose() {
 
   if (unit == 'V') {
     //volts(unit);
-    char voltage = unit;
+    char voltage = unit;     //If and only if voltage is chosen
     return voltage;
   }
  
   if (unit == 'I') {
     //current(unit);
-    char current = unit;
+    char current = unit;       //If and only if current is chosen
     return current;
   }
   
   if (unit == 'R') {
     //resistance(unit);
-    char resistance = unit;
+    char resistance = unit;            //If and only if resistance is chosen
     return resistance;
   }
   
   if (unit == 'P') {
-    //power(unit);
+    //power(unit);                       //If and only if power is chosen
     char power = unit;
     return power;
   }
     
   if (unit == 'T') {
     //time(unit);
-    char time = unit;
+    char time = unit;                   //If and only if time is chosen
     return time;
   }
   
   if (unit == 'E') {
     //energy(unit);
-    char energy = unit;
+    char energy = unit;                  //If and only if energy is chosen
     return energy;
   }
   
   if (unit == 'Q') {
     //charge(unit);
-    char charge = unit;
+    char charge = unit;                   //If and only if charge is chosen
     return charge;
   }  
 }
