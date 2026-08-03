@@ -1,7 +1,8 @@
 #include <iostream>
 using namespace std;
 
-char optionCalculate() {
+
+/* char optionCalculate() {
 
   cout << "Choose which 4 specific values you want to calculate here (the rest of the values you have to measure internally by yourself?\n";
   cout << "-------------------------------------------------------------------------------------------------------------------------------\n";
@@ -290,10 +291,28 @@ void jouleResultFive(int energyOption_five) {
 
   double energy {(voltage * voltage * time) / resistance};
   cout << "Energy result of the circuit is " << energy << " volts\n";
-}
+} 
+*/
+
+
 
 int main() {
 
-
+  optionCalculate();
+  volts();
+  coulumbs();
+  watts();
+  joules();
+  voltResult(voltageOption_one);
+  coulumbResult(chargeOption_one);
+  wattResultOne(powerOption_one);
+  wattResultTwo(powerOption_two);
+  wattResultThree(powerOption_three);
+  joulesResultOne(energyOption_one);
+  joulesResultTwo(energyOption_two);
+  joulesResultThree(energyOption_three);
+  joulesResultFour(energyOption_four);
+  joulesResultFive(energyOption_five);
+  
   return 0;
 }
