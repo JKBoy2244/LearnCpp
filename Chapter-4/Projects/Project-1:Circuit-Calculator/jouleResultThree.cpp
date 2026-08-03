@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-#include "jouleResultThree.h";
+#include "jouleResultThree.h"
 
 void jouleResultThree(int energyOption_three) {
 
