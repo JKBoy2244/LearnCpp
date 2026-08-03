@@ -317,6 +317,8 @@ int main() {
      int voltageChoice = volts(circuitChoice);
      if (voltageChoice == 1) {
        voltResult(voltageChoice);
+     } else {
+       cout << "Invalid input!\n";
      }
    }
 
@@ -324,6 +326,8 @@ int main() {
      int chargeChoice = coulumb(circuitChoice);
      if (chargeChoice == 1) {
        coulumbResult(chargeChoice);
+     } else {
+       cout << "Invalid input!\n";
      }
    }
 
@@ -332,11 +336,13 @@ int main() {
      if (powerChoice == 1) {
        wattResultOne(powerChoice);
      }
-     if (powerChoice == 2) {
+     else if (powerChoice == 2) {
        wattResultTwo(powerChoice);
      }
-    if (powerChoice == 3) {
+    else if (powerChoice == 3) {
        wattResultThree(powerChoice);
+     } else {
+       cout << "Invalid input!\n";
      }
    }
 
@@ -345,17 +351,19 @@ int main() {
      if (energyChoice == 1) {
        jouleResultOne(energyChoice);
      }
-     if (energyChoice == 2) {
+     else if (energyChoice == 2) {
        jouleResultTwo(energyChoice);
      }
-    if (energyChoice == 3) {
+    else if (energyChoice == 3) {
        jouleResultThree(energyChoice);
      }
-    if (energyChoice == 4) {
+    else if (energyChoice == 4) {
        jouleResultFour(energyChoice);
      }
-    if (energyChoice == 5) {
+    else if (energyChoice == 5) {
        jouleResultFive(energyChoice);
+     } else {
+       cout << "Invalid input!\n";
      }
    }
 
