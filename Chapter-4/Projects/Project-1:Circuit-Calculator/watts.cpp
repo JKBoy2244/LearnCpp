@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-#include "watts.h";
+#include "watts.h"
 
 int watts(char power) {
 
