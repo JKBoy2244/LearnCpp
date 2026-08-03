@@ -1,6 +1,6 @@
 #ifndef OPTIONCALCULATE
 #define OPTIONCALCULATE
 
-char optionCalculate();
+char optionCalculate(void);
 
 #endif
