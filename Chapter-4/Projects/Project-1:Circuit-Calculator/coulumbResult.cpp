@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-#include "coulumbResult.h";
+#include "coulumbResult.h"
 
 void coulumbResult(int chargeOption_one) {
 
