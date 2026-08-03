@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-#include "optionCalculate.h";
+#include "optionCalculate.h"
 
 char optionCalculate() {
 
