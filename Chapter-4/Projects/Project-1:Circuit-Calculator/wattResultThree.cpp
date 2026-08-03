@@ -14,5 +14,5 @@ void wattResultThree(int powerOption_three) {
   cin >> resistance;
 
   double power {(voltage * voltage) / resistance};
-  cout << "Power result of the circuit is " << power << " volts\n";
+  cout << "Power result of the circuit is " << power << " watts\n";
 }
