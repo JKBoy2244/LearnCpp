@@ -139,3 +139,73 @@ int joules(char energy) {
     return energyOption_five;
   }
 }
+
+void voltResult(int voltageOption_one) {
+
+  cout << "Enter the current of the circuit\n";
+  double current {};
+  cin >> current;
+
+  cout << "Enter the resistance of the circuit\n";
+  double resistance {};
+  cin >> resistance;
+
+  double voltage {current * resistance};
+  cout << "Voltage result of the circuit is " << voltage << " volts\n";
+}
+
+void coulumbResult(int chargeOption_one) {
+
+  cout << "Enter the current of the circuit\n";
+  double current {};
+  cin >> current;
+
+  cout << "Enter the time of the circuit\n";
+  unsigned double time {};
+  cin >> time;
+
+  double charge {current * time};
+  cout << "Charge result of the circuit is " << charge << " volts\n";
+}
+
+void wattResultOne(int powerOption_one) {
+
+  cout << "Enter the voltage of the circuit\n";
+  double voltage {};
+  cin >> voltage;
+
+  cout << "Enter the current of the circuit\n";
+  double current {};
+  cin >> current;
+
+  double power {current * voltage};
+  cout << "Power result of the circuit is " << power << " volts\n";
+}
+
+void wattResultTwo(int powerOption_two) {
+
+  cout << "Enter the current of the circuit\n";
+  double current {};
+  cin >> current;
+
+  cout << "Enter the resistance of the circuit\n";
+  double resistance {};
+  cin >> resistance;
+
+  double power {current * current * resistance};
+  cout << "Power result of the circuit is " << power << " volts\n";
+}
+
+void wattResultThree(int powerOption_three) {
+
+  cout << "Enter the voltage of the circuit\n";
+  double voltage {};
+  cin >> voltage;
+
+  cout << "Enter the resistance of the circuit\n";
+  double resistance {};
+  cin >> resistance;
+
+  double power {(voltage * voltage) / resistance};
+  cout << "Power result of the circuit is " << power << " volts\n";
+}
