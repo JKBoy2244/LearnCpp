@@ -309,7 +309,7 @@ void jouleResultFive(int energyOption_five) {
 } 
 */
 
-int main()
+int main() {
 
    char circuitChoice = optionCalculate();
 
@@ -341,20 +341,20 @@ int main()
    }
 
   if (circuitChoice == 'E') {
-     int energyChoice = joules(powerChoice);
+     int energyChoice = joules(circuitChoice);
      if (energyChoice == 1) {
        jouleResultOne(energyChoice);
      }
-     if (powerChoice == 2) {
+     if (energyChoice == 2) {
        jouleResultTwo(energyChoice);
      }
-    if (powerChoice == 3) {
+    if (energyChoice == 3) {
        jouleResultThree(energyChoice);
      }
-    if (powerChoice == 4) {
+    if (energyChoice == 4) {
        jouleResultFour(energyChoice);
      }
-    if (powerChoice == 5) {
+    if (energyChoice == 5) {
        jouleResultFive(energyChoice);
      }
    }
