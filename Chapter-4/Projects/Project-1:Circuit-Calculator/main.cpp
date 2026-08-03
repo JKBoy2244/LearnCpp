@@ -1,6 +1,21 @@
 #include <iostream>
 using namespace std;
 
+#include "optionCalculate.h"
+#include "volts.h"
+#include "coulumb.h"
+#include "watts.h"
+#include "joules.h"
+#include "voltResult.h"
+#include "coulumbResult.h"
+#include "wattResultOne.h"
+#include "wattResultTwo.h"
+#include "wattResultThree.h"
+#include "jouleResultOne.h"
+#include "jouleResultTwo.h"
+#include "jouleResultThree.h"
+#include "jouleResultFour.h"
+#include "jouleResultFive.h"
 
 /* char optionCalculate() {
 
@@ -294,25 +309,55 @@ void jouleResultFive(int energyOption_five) {
 } 
 */
 
+int main()
 
+   char circuitChoice = optionCalculate();
 
-int main() {
+   if (circuitChoice == 'V') {
+     int voltageChoice = volts(circuitChoice);
+     if (voltageChoice == 1) {
+       voltResult(voltageChoice);
+     }
+   }
 
-  optionCalculate();
-  volts();
-  coulumbs();
-  watts();
-  joules();
-  voltResult(voltageOption_one);
-  coulumbResult(chargeOption_one);
-  wattResultOne(powerOption_one);
-  wattResultTwo(powerOption_two);
-  wattResultThree(powerOption_three);
-  joulesResultOne(energyOption_one);
-  joulesResultTwo(energyOption_two);
-  joulesResultThree(energyOption_three);
-  joulesResultFour(energyOption_four);
-  joulesResultFive(energyOption_five);
-  
-  return 0;
+  if (circuitChoice == 'C') {
+     int chargeChoice = coulumb(circuitChoice);
+     if (chargeChoice == 1) {
+       coulumbResult(chargeChoice);
+     }
+   }
+
+  if (circuitChoice == 'P') {
+     int powerChoice = watts(circuitChoice);
+     if (powerChoice == 1) {
+       wattResultOne(powerChoice);
+     }
+     if (powerChoice == 2) {
+       wattResultTwo(powerChoice);
+     }
+    if (powerChoice == 3) {
+       wattResultThree(powerChoice);
+     }
+   }
+
+  if (circuitChoice == 'E') {
+     int energyChoice = joules(powerChoice);
+     if (energyChoice == 1) {
+       jouleResultOne(energyChoice);
+     }
+     if (powerChoice == 2) {
+       jouleResultTwo(energyChoice);
+     }
+    if (powerChoice == 3) {
+       jouleResultThree(energyChoice);
+     }
+    if (powerChoice == 4) {
+       jouleResultFour(energyChoice);
+     }
+    if (powerChoice == 5) {
+       jouleResultFive(energyChoice);
+     }
+   }
+
+   return 0;
 }
