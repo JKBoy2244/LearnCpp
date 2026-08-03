@@ -13,6 +13,6 @@ void coulumbResult(int chargeOption_one) {
   unsigned int time {};
   cin >> time;
 
-  double charge {current * (static_cast<double>(time) *1000)};
+  double charge {current * (static_cast<double>(time) / 1000)};
   cout << "Charge result of the circuit is " << charge << " coulumbs\n";
 }
