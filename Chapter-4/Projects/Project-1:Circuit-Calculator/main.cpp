@@ -291,3 +291,9 @@ void jouleResultFive(int energyOption_five) {
   double energy {(voltage * voltage * time) / resistance};
   cout << "Energy result of the circuit is " << energy << " volts\n";
 }
+
+int main() {
+
+
+  return 0;
+}
