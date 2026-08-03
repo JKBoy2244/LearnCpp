@@ -17,6 +17,6 @@ void jouleResultFive(int energyOption_five) {
   unsigned int time {};
   cin >> time;
 
-  double energy {(voltage * voltage * (static_cast<double>(time) *1000)) / resistance};
+  double energy {(voltage * voltage * (static_cast<double>(time) / 1000)) / resistance};
   cout << "Energy result of the circuit is " << energy << " joules\n";
 }
