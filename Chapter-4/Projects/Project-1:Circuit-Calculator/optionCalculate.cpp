@@ -7,7 +7,7 @@ char optionCalculate() {
 
   cout << "Choose which 4 specific values you want to calculate here (the rest of the values you have to measure internally by yourself?\n";
   cout << "-------------------------------------------------------------------------------------------------------------------------------"\n";
-  cout << "V = voltage, P = power, C = charge, E = energy";
+  cout << "V = voltage, P = power, C = charge, E = energy\n";
   cout << "-------------------------------------------------------------------------------------------------------------------------------"\n";
 
   char optionLetter {};
