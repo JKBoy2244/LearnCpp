@@ -14,7 +14,7 @@ void jouleResultTwo(int energyOption_two) {
   cin >> current;
 
   cout << "Enter the time of the circuit\n";
-  unsigned double time {};
+  double time {};
   cin >> time;
 
   double energy {voltage * current * time};
