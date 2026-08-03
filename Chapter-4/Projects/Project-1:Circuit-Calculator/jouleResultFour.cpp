@@ -14,9 +14,9 @@ void jouleResultFour(int energyOption_four) {
   cin >> resistance;
 
   cout << "Enter the time of the circuit\n";
-  unsigned double time {};
+  double time {};
   cin >> time;
 
   double energy {current * current * resistance * time};
-  cout << "Energy result of the circuit is " << energy << " volts\n";
+  cout << "Energy result of the circuit is " << energy << " joules\n";
 }
