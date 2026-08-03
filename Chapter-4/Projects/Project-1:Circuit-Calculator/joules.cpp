@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-#include "joules.h";
+#include "joules.h"
 
 int joules(char energy) {
 
