@@ -10,7 +10,7 @@ void coulumbResult(int chargeOption_one) {
   cin >> current;
 
   cout << "Enter the time of the circuit\n";
-  unsigned double time {};
+  double time {};
   cin >> time;
 
   double charge {current * time};
