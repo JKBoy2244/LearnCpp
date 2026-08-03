@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-#include "volts.h";
+#include "volts.h"
 
 int volts(char voltage) {
 
