@@ -12,6 +12,8 @@ using namespace std;
 #include "firstYearScale.h"
 #include "secondYearScale.h"
 #include "thirdYearScale.h"
+#include "finalScore.h"
+#include "classification.h"
 
 string firstName() {
 
@@ -106,14 +108,53 @@ double firstYearScale(double firstYearScore) {
 
 double secondYearScale(double secondYearScore) {
 
-  constexpr double secondYearWeighting {0.1};
+  constexpr double secondYearWeighting {0.3};
   double secondYearWeightingResult {secondYearScore * secondYearWeighting};                             //This calculation is used as second year accounts 30% of the whole course final grade
   return secondYearWeightingResult;
 }
 
 double thirdYearScale(double thirdYearScore) {
 
-  constexpr double thirdYearWeighting {0.1};
+  constexpr double thirdYearWeighting {0.6};
   double thirdYearWeightingResult {thirdYearScore * thirdYearWeighting};                           //This calculation is used as third year accounts 60% of the whole course final grade
   return thirdYearWeightingResult;
+}
+
+double finalScore(double firstYearWeightingResult, double secondYearWeightingResult, double thirdYearWeightingResult) {
+
+  double finalMark {firstYearWeightingResult + secondYearWeightingResult + thirdYearWeightingResult};
+  return finalMark;
+}
+
+string classification(double finalMark) {
+
+   if (finalMark >= 70.0) {
+
+      string finalGrade = "First Class";
+      return finalGrade;
+   }
+
+   else if (finalMark >= 60.0 and finalMark < 70.0) {
+
+     string finalGrade = "Upper Second Class Honours";
+     return finalGrade;
+   }
+
+   else if (finalMark >= 50.0 and finalMark < 50.0) {
+
+     string finalGrade = "Lower Second Class Honours";
+     return finalGrade;
+   }
+
+  else if (finalMark >= 40 and finalMark < 50.0) {
+
+     string finalGrade = "Third Class Honours";
+     return finalGrade;
+   }
+
+  else {
+ 
+     string finalGrade = "Fail";
+     return finalGrade;
+  }
 }
