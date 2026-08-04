@@ -1,7 +1,8 @@
 #ifndef FULLPROFILECARD
 #define FULLPROFILECARD
+#include <string>
 
-void fullProfileCard(string_view firstNameInput, string_view lastNameInput, string_view universityNameInput, string_view courseNameInput, double firstYearScore, double secondYearScore, double thirdYearScore, double firstYearWeightingResult,
-double secondYearWeightingResult, double thirdYearWeightingResult, double finalMark, string finalGrade, int internshipNumber);
+void fullProfileCard(std::string first, std::string last, std::string university, std::string course, double firstYearScore, double secondYearScore, double thirdYearScore, double firstYearWeightingResult,
+double secondYearWeightingResult, double thirdYearWeightingResult, double finalMark, std::string finalGrade, int internshipNumber);
 
 #endif
