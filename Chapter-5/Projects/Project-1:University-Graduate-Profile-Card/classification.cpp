@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 
-#include "classification.h";
+#include "classification.h"
 
 string classification(double finalMark) {
 
