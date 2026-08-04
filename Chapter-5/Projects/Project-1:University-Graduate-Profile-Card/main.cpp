@@ -196,6 +196,20 @@ double secondYearWeightingResult, double thirdYearWeightingResult, double finalM
 
 int main() {
 
+  string first = firstName();
+  string last = lastName();
+  string university = universityName();
+  string course = courseName();
+  double firstScore = firstYearResult();
+  double secondScore = secondYearResult();
+  double thirdScore = thirdYearResult();
+  double firstScale = firstYearScale(firstScore);
+  double secondScale = secondYearScale(secondScore);
+  double thirdScale = thirdYearScale(thirdScore);
+  double totalScore = finalScore(firstScale, secondScale, thirdScale);
+  double grade = classification(totalScore);
+  int internshipTotal = internships();
+  fullProfileCard(first, last, university, course, firstScore, secondScore, thirdScore, firstScale, secondScale, thirdScale, totalScore, grade, internshipTotal);
   
   return 0;
 }
