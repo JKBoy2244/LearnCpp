@@ -12,7 +12,7 @@ string classification(double finalMark) {
       return finalGrade;
    }
 
-   else if (finalMark >= 60.0 and finalMark < 70.0) {
+   else if (finalMark >= 60.0 and finalMark < 70.0) {                              //Classifying final marks into the respective grades
 
      string finalGrade = "Upper Second Class Honours";
      return finalGrade;
