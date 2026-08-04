@@ -35,3 +35,4 @@ string classification(double finalMark) {
      string finalGrade = "Fail";
      return finalGrade;
   }
+}
