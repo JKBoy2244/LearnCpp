@@ -1,6 +1,7 @@
 #ifndef FIRSTNAME
 #define FIRSTNAME
+#include <string>
 
-string firstName(void);
+std::string firstName(void);
 
 #endif
