@@ -1,6 +1,7 @@
 #ifndef CLASSIFICATION
 #define CLASSIFICATION
+#include <string>
 
-string classification(double finalMark);
+std::string classification(double finalMark);
 
 #endif
