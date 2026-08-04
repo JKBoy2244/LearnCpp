@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 
-#include "firstName.h";
+#include "firstName.h"
 
 string firstName() {
 
