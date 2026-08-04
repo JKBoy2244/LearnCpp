@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 
-#include "firstYearResult.h";
+#include "firstYearResult.h"
 
 double firstYearResult() {
 
