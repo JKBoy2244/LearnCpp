@@ -14,6 +14,7 @@ using namespace std;
 #include "thirdYearScale.h"
 #include "finalScore.h"
 #include "classification.h"
+#include "internships.h"
 
 string firstName() {
 
@@ -134,7 +135,7 @@ string classification(double finalMark) {
       return finalGrade;
    }
 
-   else if (finalMark >= 60.0 and finalMark < 70.0) {
+   else if (finalMark >= 60.0 and finalMark < 70.0) {                              //Classifying final marks into the respective grades
 
      string finalGrade = "Upper Second Class Honours";
      return finalGrade;
@@ -146,7 +147,7 @@ string classification(double finalMark) {
      return finalGrade;
    }
 
-  else if (finalMark >= 40 and finalMark < 50.0) {
+  else if (finalMark >= 40.0 and finalMark < 50.0) {
 
      string finalGrade = "Third Class Honours";
      return finalGrade;
@@ -158,3 +159,19 @@ string classification(double finalMark) {
      return finalGrade;
   }
 }
+
+int internships() {
+
+  cout << "How many internships did you complete during your 3 years of undergraduate at university?\n";
+  int internshipCount {};
+  cin >> internshipCount;
+  const int internshipNumber = internshipCount;
+
+  if (internshipNumber < 0) {
+    return 0;
+  }
+
+  return internshipNumber;
+}
+
+
