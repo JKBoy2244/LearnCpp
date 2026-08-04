@@ -10,5 +10,5 @@ string lastName() {
   string last {};
   cin >> last;
   string_view lastNameInput = last;
-  return lastNameInput;
+  return last;
 }
