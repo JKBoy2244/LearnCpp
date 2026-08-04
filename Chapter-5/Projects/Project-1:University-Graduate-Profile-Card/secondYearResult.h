@@ -1,6 +1,6 @@
 #ifndef SECONDYEARRESULT
 #define SECONDYEARRESULT
 
-double secondYearResult();
+double secondYearResult(void);
 
 #endif
