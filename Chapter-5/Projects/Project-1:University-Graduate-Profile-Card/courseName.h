@@ -1,6 +1,7 @@
 #ifndef COURSENAME
 #define COURSENAME
+#include <string>
 
-string courseName(void);
+std::string courseName(void);
 
 #endif
