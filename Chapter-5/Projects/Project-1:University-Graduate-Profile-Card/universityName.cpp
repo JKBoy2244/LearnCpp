@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 
-#include "universityName.h";
+#include "universityName.h"
 
 string universityName() {
 
