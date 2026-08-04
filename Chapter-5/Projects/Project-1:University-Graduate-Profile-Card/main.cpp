@@ -17,6 +17,7 @@ using namespace std;
 #include "internships.h"
 #include "fullProfileCard.h"
 
+/*
 
 string firstName() {
 
@@ -193,6 +194,8 @@ double secondYearWeightingResult, double thirdYearWeightingResult, double finalM
    cout << "Number of internships completed : " << internshipNumber << endl;
    cout << "-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n";
 }
+
+*/
 
 int main() {
 
