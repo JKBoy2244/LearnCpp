@@ -18,7 +18,7 @@ string classification(double finalMark) {
      return finalGrade;
    }
 
-   else if (finalMark >= 50.0 and finalMark < 50.0) {
+   else if (finalMark >= 50.0 and finalMark < 60.0) {
 
      string finalGrade = "Lower Second Class Honours";
      return finalGrade;
