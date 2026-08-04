@@ -1,6 +1,6 @@
 #ifndef FIRSTNAME
 #define FIRSTNAME
 
-string firstName();
+string firstName(void);
 
 #endif
