@@ -9,6 +9,9 @@ using namespace std;
 #include "firstYearResult.h"
 #include "secondYearResult.h"
 #include "thirdYearResult.h"
+#include "firstYearScale.h"
+#include "secondYearScale.h"
+#include "thirdYearScale.h"
 
 string firstName() {
 
@@ -94,3 +97,23 @@ double thirdYearResult() {
   return thirdYearScore;
 }
 
+double firstYearScale(double firstYearScore) {
+
+  constexpr double firstYearWeighting {0.1};
+  double firstYearWeightingResult {firstYearScore * firstYearWeighting};                        //This calculation is used as first year accounts 10% of the whole course final grade
+  return firstYearWeightingResult;
+}
+
+double secondYearScale(double secondYearScore) {
+
+  constexpr double secondYearWeighting {0.1};
+  double secondYearWeightingResult {secondYearScore * secondYearWeighting};                             //This calculation is used as second year accounts 30% of the whole course final grade
+  return secondYearWeightingResult;
+}
+
+double thirdYearScale(double thirdYearScore) {
+
+  constexpr double thirdYearWeighting {0.1};
+  double thirdYearWeightingResult {thirdYearScore * thirdYearWeighting};                           //This calculation is used as third year accounts 60% of the whole course final grade
+  return thirdYearWeightingResult;
+}
