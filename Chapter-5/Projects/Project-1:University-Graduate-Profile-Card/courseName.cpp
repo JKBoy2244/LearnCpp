@@ -10,5 +10,5 @@ string courseName() {
   string course {};
   cin >> course;
   string_view courseNameInput = course;
-  return courseNameInput;
+  return course;
 }
