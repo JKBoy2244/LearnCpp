@@ -1,6 +1,8 @@
 #ifndef LASTNAME
 #define LASTNAME
 
-string lastName(void);
+#include <string>
+
+std::string lastName(void);
 
 #endif
