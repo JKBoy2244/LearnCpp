@@ -1,6 +1,8 @@
 #ifndef UNIVERSITYNAME
 #define UNIVERSITYNAME
 
-string universityName(void);
+#include <string>
+
+std::string universityName(void);
 
 #endif
