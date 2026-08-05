@@ -5,7 +5,7 @@ using namespace std;
 
 #include "classification.h"
 
-string classification(double finalMark) {
+string_view classification(double finalMark) {
 
    if (finalMark >= 70.0) {
 
