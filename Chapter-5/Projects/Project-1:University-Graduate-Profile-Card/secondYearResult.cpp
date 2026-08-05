@@ -11,7 +11,7 @@ double secondYearResult() {
   cin >> secondYearScore;
   bool secondValid { secondYearScore >= 0.00 and secondYearScore <= 100.00);
 
-  if (!secondValid) {                                      //Asks user for first year result to calculate the weighting score for that year
+  if (!secondValid) {                                      //Asks user for second year result to calculate the weighting score for that year
     return 0.00;
   }
 
