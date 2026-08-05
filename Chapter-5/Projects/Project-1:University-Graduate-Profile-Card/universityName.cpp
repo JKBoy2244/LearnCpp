@@ -9,5 +9,6 @@ string universityName() {
   cout << "Which University did you attend?\n";            //Prompts user to type university name?
   string university {};
   cin >> university;
+  std::getline(std::cin >> std::ws, university);
   return university;
 }
