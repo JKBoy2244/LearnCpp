@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <string_view>
 using namespace std;
 
 #include "classification.h"
@@ -8,31 +9,31 @@ string classification(double finalMark) {
 
    if (finalMark >= 70.0) {
 
-      string finalGrade = "First Class";
+      string_view finalGrade = "First Class";
       return finalGrade;
    }
 
    else if (finalMark >= 60.0 and finalMark < 70.0) {                              //Classifying final marks into the respective grades
 
-     string finalGrade = "Upper Second Class Honours";
+     string_view finalGrade = "Upper Second Class Honours";
      return finalGrade;
    }
 
    else if (finalMark >= 50.0 and finalMark < 60.0) {
 
-     string finalGrade = "Lower Second Class Honours";
+     string_view finalGrade = "Lower Second Class Honours";
      return finalGrade;
    }
 
   else if (finalMark >= 40 and finalMark < 50.0) {
 
-     string finalGrade = "Third Class Honours";
+     string_view finalGrade = "Third Class Honours";
      return finalGrade;
    }
 
   else {
  
-     string finalGrade = "Fail";
+     string_view finalGrade = "Fail";
      return finalGrade;
   }
 }
