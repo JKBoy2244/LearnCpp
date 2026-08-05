@@ -8,6 +8,6 @@ string courseName() {
 
   cout << "What course did you study?\n";            //Prompts user to type course name?
   string course {};
-  getline(cin >> ws, course);
+  getline(cin, course);
   return course;
 }
