@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <string_view>
 using namespace std;
 
 #include "firstName.h"
@@ -212,7 +213,7 @@ int main() {
   double totalScore = finalScore(firstScale, secondScale, thirdScale);
   string grade = classification(totalScore);
   int internshipTotal = internships();
-  fullProfileCard(first, last, university, course, firstScore, secondScore, thirdScore, firstScale, secondScale, thirdScale, totalScore, grade, internshipTotal);
+  fullProfileCard(firstNameInput, lastNameInput, universityNameInput, courseNameInput, firstScore, secondScore, thirdScore, firstScale, secondScale, thirdScale, totalScore, grade, internshipTotal);
   
   return 0;
 }
