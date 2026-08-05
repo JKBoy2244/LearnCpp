@@ -10,7 +10,7 @@ double secondYearWeightingResult, double thirdYearWeightingResult, double finalM
 
    cout << "-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n";
    cout << "UNIVERSITY STUDENT GRADUATE PROFILE CARD!\n";
-   cout << "-------------------------------------------";
+   cout << "-------------------------------------------\n";
    cout << "First name : " << first << endl;
    cout << "Last name : " << last << endl;
    cout << "University name : " << university << endl;
