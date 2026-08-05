@@ -6,7 +6,7 @@ using namespace std;
 #include "fullProfileCard.h"
 
 void fullProfileCard(string_view firstNameInput, string_view lastNameInput, string_view universityNameInput, string_view courseNameInput, double firstYearScore, double secondYearScore, double thirdYearScore, double firstYearWeightingResult,
-double secondYearWeightingResult, double thirdYearWeightingResult, double finalMark, string finalGrade, int internshipNumber) {
+double secondYearWeightingResult, double thirdYearWeightingResult, double finalMark, string_view finalGrade, int internshipNumber) {
 
    cout << "-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n";
    cout << "UNIVERSITY STUDENT GRADUATE PROFILE CARD!\n";
