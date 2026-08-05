@@ -1,10 +1,11 @@
 #include <iostream>
 #include <string>
+#include <string_view>
 using namespace std;
 
 #include "fullProfileCard.h"
 
-void fullProfileCard(string first, string last, string university, string course, double firstYearScore, double secondYearScore, double thirdYearScore, double firstYearWeightingResult,
+void fullProfileCard(string_view firstNameInput, string_view lastNameInput, string_view universityNameInput, string_view courseNameInput, double firstYearScore, double secondYearScore, double thirdYearScore, double firstYearWeightingResult,
 double secondYearWeightingResult, double thirdYearWeightingResult, double finalMark, string finalGrade, int internshipNumber) {
 
    cout << "-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n";
