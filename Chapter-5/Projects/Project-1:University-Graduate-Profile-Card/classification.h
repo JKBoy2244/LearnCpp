@@ -1,7 +1,7 @@
 #ifndef CLASSIFICATION
 #define CLASSIFICATION
-#include <string>
+#include <string_view>
 
-std::string classification(double finalMark);
+std::string_view classification(double finalMark);
 
 #endif
