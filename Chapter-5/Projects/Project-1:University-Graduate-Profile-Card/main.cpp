@@ -211,7 +211,7 @@ int main() {
   double secondScale = secondYearScale(secondScore);
   double thirdScale = thirdYearScale(thirdScore);
   double totalScore = finalScore(firstScale, secondScale, thirdScale);
-  string grade = classification(totalScore);
+  string_view grade = classification(totalScore);
   int internshipTotal = internships();
   fullProfileCard(first, last, university, course, firstScore, secondScore, thirdScore, firstScale, secondScale, thirdScale, totalScore, grade, internshipTotal);
   
