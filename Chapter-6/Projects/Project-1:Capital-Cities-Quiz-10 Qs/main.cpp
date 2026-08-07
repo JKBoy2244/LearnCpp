@@ -287,7 +287,7 @@ int main() {
   cout << "Each question gives you 4 option and only one option is correct so if you type anything other than the correct option, it's automatically wrong!\n";
   cout << "Are you ready? Please type either y for yes or n for no to continue (y/n)?\n";
   
-  char yesNo {}
+  char yesNo {};
   cin >> yesNo;
   if (yesNo == 'y') {
     
