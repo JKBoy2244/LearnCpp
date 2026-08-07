@@ -20,7 +20,7 @@ int questionOne() {
     return currentScore;
     
   } else {
-    cout << "Sorry, your answer is incorrect, moving on to question Three!\n";
+    cout << "Sorry, your answer is incorrect, moving on to question Two!\n";
     return currentScore;
   }
 }
