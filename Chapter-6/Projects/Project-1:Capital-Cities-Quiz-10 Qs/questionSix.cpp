@@ -10,7 +10,7 @@ int questionSix(int currentScore) {
   cout << "a). Pyongyang b). Beijing c). Seoul d). Kuala Lumpur\n";
   char answerOption {};
   cin >> answerOption;
-  string correctOrNot {(answerOption == 'c') ? "correct" : "incorrect"};               //Prompts user to answer questionFive
+  string correctOrNot {(answerOption == 'c') ? "correct" : "incorrect"};               //Prompts user to answer questionSix
   
   if (correctOrNot == "correct") {
     cout << "Yes, c). Seoul is the correct answer!\n";
