@@ -18,7 +18,7 @@ int questionFive(int currentScore) {
     return currentScore;
     
   } else {
-    cout << "Sorry, your answer is incorrect, moving on to question Four!\n";
+    cout << "Sorry, your answer is incorrect, moving on to question Six!\n";
     return currentScore;
   }
 }
