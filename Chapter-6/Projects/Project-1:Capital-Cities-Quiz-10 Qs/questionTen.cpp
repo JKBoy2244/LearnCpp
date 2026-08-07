@@ -9,7 +9,7 @@ int questionTen(int currentScore) {
   cout << "Question Ten: What is the capital city of Dominican Republic?\n";
   cout << "a). Santo Domingo b). Saint George's c). San Marino d). Saint John's\n";
   char answerOption {};
-  cin answerOption;
+  cin >> answerOption;
   string correctOrNot {(answerOption == 'a') ? "correct" : "incorrect"};               //Prompts user to answer questionTen
   
   if (correctOrNot == "correct") {
