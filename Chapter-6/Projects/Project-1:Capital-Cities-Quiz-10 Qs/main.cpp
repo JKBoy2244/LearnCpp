@@ -293,7 +293,7 @@ int main() {
     
     int score = questionOne();
     int score = questionTwo(score);
-    int score = questionThree(score);
+    int score = questionThree(score);                                                 //The compiler runs this main function in sequential order
     int score = questionFour(score);
     int score = questionFive(score);
     int score = questionSix(score);
