@@ -18,7 +18,7 @@ int questionTwo(int currentScore) {
     return currentScore;
     
   } else {
-    cout << "Yes, b). London is the correct answer!\n";
+    cout << "Sorry, your answer is incorrect, moving on to question Three!\n";
     return currentScore;
   }
 }
