@@ -215,16 +215,16 @@ int main() {
   char yesNo {}
   cin >> yesNo;
   if (yesNo == 'y') {
-    questionOne();
-    questionTwo();
-    questionThree();
-    questionFour();
-    questionFive();
-    questionSix();
-    questionSeven();
-    questionEight();
-    questionNine();
-    questionTen();
+    int score = questionOne();
+    int score = questionTwo(score);
+    int score = questionThree(score);
+    int score = questionFour(score);
+    int score = questionFive(score);
+    int score = questionSix(score);
+    int score = questionSeven(score);
+    int score = questionEight(score);
+    int score = questionNine(score);
+    int score = questionTen(score);
   } else {
 
      cout << "Since, you're not ready, you can't do this quiz right now unfortunately. Come back when you're ready!"\n";
