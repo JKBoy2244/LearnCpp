@@ -15,6 +15,7 @@ using namespace std;
 #include "questionTen.h"
 #include "percentageScoreCalculate.h"
 #include "classification.h"
+#include "scoreDisplay.h"
 
 int questionOne() {
 
@@ -267,6 +268,16 @@ string_view classification(double percentage) {
   }
 }
 
+void scoreDisplay(int currentScore, double percentage, string_view classifiedRating) {
+
+  cout << "---------------------------------------------------------------------------------------\n";
+  cout << "Total score for this quiz: " << currentScore << "/10\n";
+  cout << "Percentage: " << percentage << "%\n";
+  cout << "Performance: " << classifiedRating << endl;
+  cout << "---------------------------------------------------------------------------------------\n";
+}
+
+
 int main() {
 
   cout << "Welcome to the Capital Cities Quiz, this quiz will ask you 10 questions regarding capital cities of the countries!!\n";
@@ -289,6 +300,7 @@ int main() {
     int score = questionTen(score);
     double percent = percentageScoreCalculate(score);
     string_view performance = classification(percent);
+    scoreDisplay(score, percent, performance);
     
   } else {
 
