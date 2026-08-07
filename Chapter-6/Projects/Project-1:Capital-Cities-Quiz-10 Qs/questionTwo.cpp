@@ -13,12 +13,12 @@ int questionTwo(int currentScore) {
   string correctOrNot {(answerOption == 'a') ? "correct" : "incorrect"};               //Prompts user to answer questionTwo
   
   if (correctOrNot == "correct") {
-    cout << "Yes, a). Copenhagen is the correct answer!";
+    cout << "Yes, a). Copenhagen is the correct answer!\n";
     currentScore++;
     return currentScore;
     
   } else {
-    cout << "Yes, b). London is the correct answer!";
+    cout << "Yes, b). London is the correct answer!\n";
     return currentScore;
   }
 }
