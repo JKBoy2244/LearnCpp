@@ -290,19 +290,12 @@ int main() {
   cout << "Are you ready? Please type either y for yes or n for no to continue (y/n)?\n";
   
   char yesNo {};
-  cin >> yesNo;
+  cin >> yesNo;                                                                      //The compiler runs this main function in sequential order
   if (yesNo == 'y') {
     
     int score = questionOne();
-    score = questionTwo(score);
-    score = questionThree(score);                                                 //The compiler runs this main function in sequential order
-    score = questionFour(score);
-    score = questionFive(score);
-    score = questionSix(score);
-    score = questionSeven(score);
-    score = questionEight(score);
-    score = questionNine(score);
-    score = questionTen(score);
+    score = questionTwo(score), score = questionThree(score), score = questionFour(score), score = questionFive(score), score = questionSix(score),
+    score = questionSeven(score), score = questionEight(score), score = questionNine(score),  score = questionTen(score);
     double percent = percentageScoreCalculate(score);
     string_view performance = classification(percent);
     string feedBack = quizFeedback();
