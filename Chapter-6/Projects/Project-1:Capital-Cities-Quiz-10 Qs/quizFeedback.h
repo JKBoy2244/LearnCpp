@@ -2,6 +2,6 @@
 #define QUIZFEEDBACK
 #include <string>
 
-string quizFeedback(void);
+std::string quizFeedback(void);
 
 #endif
