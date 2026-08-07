@@ -292,15 +292,15 @@ int main() {
   if (yesNo == 'y') {
     
     int score = questionOne();
-    int score = questionTwo(score);
-    int score = questionThree(score);                                                 //The compiler runs this main function in sequential order
-    int score = questionFour(score);
-    int score = questionFive(score);
-    int score = questionSix(score);
-    int score = questionSeven(score);
-    int score = questionEight(score);
-    int score = questionNine(score);
-    int score = questionTen(score);
+    score = questionTwo(score);
+    score = questionThree(score);                                                 //The compiler runs this main function in sequential order
+    score = questionFour(score);
+    score = questionFive(score);
+    score = questionSix(score);
+    score = questionSeven(score);
+    score = questionEight(score);
+    score = questionNine(score);
+    score = questionTen(score);
     double percent = percentageScoreCalculate(score);
     string_view performance = classification(percent);
     scoreDisplay(score, percent, performance);
