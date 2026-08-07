@@ -15,7 +15,9 @@ using namespace std;
 #include "questionTen.h"
 #include "percentageScoreCalculate.h"
 #include "classification.h"
+#include "quizFeedback.h"
 #include "scoreDisplay.h"
+
 
 
 /* 
@@ -303,7 +305,8 @@ int main() {
     score = questionTen(score);
     double percent = percentageScoreCalculate(score);
     string_view performance = classification(percent);
-    scoreDisplay(score, percent, performance);
+    string feedBack = quizFeedback();
+    scoreDisplay(score, percent, performance, feedBack);
     
   } else {
 
