@@ -6,7 +6,7 @@ using namespace std;
 
 int questionSix(int currentScore) {
 
-  cout << "Question Five: What is the capital city of South Korea?\n";
+  cout << "Question Six: What is the capital city of South Korea?\n";
   cout << "a). Pyongyang b). Beijing c). Seoul d). Kuala Lumpur\n";
   char answerOption {};
   cin >> answerOption;
