@@ -17,7 +17,9 @@ using namespace std;
 #include "classification.h"
 #include "scoreDisplay.h"
 
-int questionOne() {
+
+/* 
+ int questionOne() {
 
   int currentScore {0};
   
@@ -277,6 +279,7 @@ void scoreDisplay(int currentScore, double percentage, string_view classifiedRat
   cout << "---------------------------------------------------------------------------------------\n";
 }
 
+*/
 
 int main() {
 
