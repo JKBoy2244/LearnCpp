@@ -13,6 +13,7 @@ using namespace std;
 #include "questionEight.h"
 #include "questionNine.h"
 #include "questionTen.h"
+#include "percentageScoreCalculate.h"
 
 int questionOne() {
 
@@ -192,7 +193,7 @@ int questionTen(int currentScore) {
   cout << "Question Ten: What is the capital city of Dominican Republic?\n";
   cout << "a). Santo Domingo b). Saint George's c). San Marino d). Saint John's\n";
   char answerOption {};
-  getline(cin >> ws, answerOption);
+  getline(cin >> ws, answerOption);                                         //This answer requires more than one word and with just the string type, it only takes the first word even when you type more than one word, hence getline was used
   string correctOrNot {(answerOption == 'a') ? "correct" : "incorrect"};               //Prompts user to answer questionTen
   
   if (correctOrNot == "correct") {
@@ -206,6 +207,12 @@ int questionTen(int currentScore) {
   }
 }
 
+double percentageScoreCalculate(int currentScore) {
+
+  double percentage = ((static_cast<double>(currentScore)) / 10) * 100;
+  return percentage;
+}
+
 int main() {
 
   cout << "Welcome to the Capital Cities Quiz, this quiz will ask you 10 questions regarding capital cities of the countries!!\n";
@@ -215,6 +222,7 @@ int main() {
   char yesNo {}
   cin >> yesNo;
   if (yesNo == 'y') {
+    
     int score = questionOne();
     int score = questionTwo(score);
     int score = questionThree(score);
@@ -225,6 +233,8 @@ int main() {
     int score = questionEight(score);
     int score = questionNine(score);
     int score = questionTen(score);
+    double percent = percentageScoreCalculate(score);
+    
   } else {
 
      cout << "Since, you're not ready, you can't do this quiz right now unfortunately. Come back when you're ready!"\n";
