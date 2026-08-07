@@ -307,6 +307,6 @@ int main() {
     
   } else {
 
-     cout << "Since, you're not ready, you can't do this quiz right now unfortunately. Come back when you're ready!"\n";
+     cout << "Since, you're not ready, you can't do this quiz right now unfortunately. Come back when you're ready!\n";
   }
 }
