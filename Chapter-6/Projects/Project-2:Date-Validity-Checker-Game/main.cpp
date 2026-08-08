@@ -6,7 +6,7 @@ using namespace std;
 #include "month.h"
 #include "year.h"
 #include "dateCheck.h"
-#include "output.h";
+#include "output.h"
 
 /*
  int day() {
