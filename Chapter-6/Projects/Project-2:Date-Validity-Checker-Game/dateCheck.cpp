@@ -4,11 +4,12 @@ using namespace std;
 
 #include "dateCheck.h"
 
-string_view dateCheck(int day, int month, int year) {
+string_view dateCheck(int dayDate, int monthDate, int yearDate) {
 
-  bool thirtyDayRange {((month == 4) || (month == 6) || (month == 9) || (month == 12)) && (year >= 1950 && year <= 2050) && (day >= 1 && day <= 30)}                                                             //Conditions list for dates
-  bool thirtyOneDayRange {((month == 1) || (month == 3) || (month == 5) || (month == 7) || (month == 8) || (month == 10) || (month == 11)) && (year >= 1950 && year <= 2050) && (day >= 1 && day <= 31)}
-  bool februaryRange {((if year % 4 == 0 || year % 400 == 0) && (year % 100 != 0)) ? ((month == 2) && (year >= 1950 && year <= 2050) && (day >= 1 && day <= 29)) : ((month == 2) && (year >= 1950 && year <= 2050) && (day >= 1 && day <= 28))}
+  bool thirtyDayRange {((monthDate == 4) || (monthDate == 6) || (monthDate == 9) || (monthDate == 12)) && (yearDate >= 1950 && yearDate <= 2050) && (dayDate >= 1 && dayDate <= 30)}                                                             //Conditions list for dates
+  bool thirtyOneDayRange {((monthDate == 1) || (monthDate == 3) || (monthDate == 5) || (monthDate == 7) || (monthDate == 8) || (monthDate == 10) || (monthDate == 11)) && (yearDate >= 1950 && yearDate <= 2050) && (dayDate >= 1 && dayDate <= 31)}
+  bool februaryRange {((if yearDate % 4 == 0 || yearDate % 400 == 0) && (yearDate % 100 != 0)) ? ((monthDate == 2) && (yearDate >= 1950 && yearDate <= 2050) && (dayDate >= 1 && day <= 29)) : ((monthDate == 2) && (yearDate >= 1950 && yearDate <= 2050) && 
+                      (dayDate >= 1 && dayDate <= 28))}
 
   if ((thirtyDayRange) || (thirtyOneDayRange) || (februaryRange)) {
 
