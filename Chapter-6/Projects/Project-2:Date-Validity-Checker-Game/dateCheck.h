@@ -1,6 +1,6 @@
 #ifndef DATECHECK
 #define DATECHECK
 
-std::string_view dateCheck(int day, std::string month, int year);
+std::string_view dateCheck(int day, int month, int year);
 
 #endif
