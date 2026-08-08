@@ -6,5 +6,5 @@ using namespace std;
 
 void output(int dayDate, int monthDate, int yearDate, string_view outcome) {
 
-  cout << day << "/" << month << "/" << year << " is a " << outcome << " date!\n";
+  cout << dayDate << "/" << monthDate << "/" << yearDate << " is a " << outcome << " date!\n";
 }
