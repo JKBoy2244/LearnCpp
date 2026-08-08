@@ -8,7 +8,8 @@ using namespace std;
 #include "dateCheck.h"
 #include "output.h";
 
-int day() {
+/*
+ int day() {
 
   cout << "Please enter a day between 1 and however many days in total for a partiuclar month as a date?\n";                              //Prompts user to enter the day
   int dayDate {};
@@ -53,6 +54,8 @@ void output(int day, int month, int year, string_view outcome) {
 
   cout << day << "/" << month << "/" << year << " is a " << outcome << " date!\n";
 }
+
+*/
 
 int main() {
 
