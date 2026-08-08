@@ -4,7 +4,7 @@ using namespace std;
 
 #include "output.h";
 
-void output(int day, int month, int year, string_view outcome) {
+void output(int dayDate, int monthDate, int yearDate, string_view outcome) {
 
   cout << day << "/" << month << "/" << year << " is a " << outcome << " date!\n";
 }
