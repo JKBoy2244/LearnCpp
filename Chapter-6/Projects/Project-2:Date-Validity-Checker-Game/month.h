@@ -1,6 +1,6 @@
 #ifndef MONTH
 #define MONTH
 
-std::string month(void);
+int month(void);
 
 #endif
