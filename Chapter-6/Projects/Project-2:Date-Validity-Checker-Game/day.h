@@ -1,6 +1,6 @@
 #ifndef DAY
 #define DAY
 
-int day();
+int day(void);
 
 #endif
