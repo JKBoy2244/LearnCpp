@@ -60,5 +60,5 @@ void output(int day, int month, int year, string_view outcome) {
 int main() {
 
   int dayNumber = day(), int monthNumber = month(), int yearNumber = year(), string_view validResult = dateCheck(dayNumber, monthNumber, yearNumber), output(dayNumber, monthNumber, yearNumber, validResult);
-  return 0
+  return 0;
 }
