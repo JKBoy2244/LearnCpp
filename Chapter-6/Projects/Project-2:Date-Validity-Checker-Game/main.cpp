@@ -5,6 +5,8 @@ using namespace std;
 #include "day.h"
 #include "month.h"
 #include "year.h"
+#include "dateCheck.h"
+#include "output.h";
 
 int day() {
 
@@ -14,10 +16,10 @@ int day() {
   return dayDate;
 }
 
-string month() {
+int month() {
 
-  cout << "Please enter a month from January to December as a second part of the date?\n";                                             //Prompts user to enter the month
-  string monthDate {};
+  cout << "Please enter a month number from 1 to 12 as a second part of the date?\n";                                             //Prompts user to enter the month
+  int monthDate {};
   cin monthDate;
   return monthDate;
 }
@@ -30,37 +32,30 @@ int year() {
   return yearDate;
 }
 
-string_view dateCheck(int day, string month, int year) {
+string_view dateCheck(int dayDate, int monthDate, int yearDate) {
 
-  if (year < 1950 || year > 2050) {
+  bool thirtyDayRange {((month == 4) || (month == 6) || (month == 9) || (month == 12)) && (year >= 1950 && year <= 2050) && (day >= 1 && day <= 30)}                                                             //Conditions list for dates
+  bool thirtyOneDayRange {((month == 1) || (month == 3) || (month == 5) || (month == 7) || (month == 8) || (month == 10) || (month == 11)) && (year >= 1950 && year <= 2050) && (day >= 1 && day <= 31)}
+  bool februaryRange {((if year % 4 == 0 || year % 400 == 0) && (year % 100 != 0)) ? ((month == 2) && (year >= 1950 && year <= 2050) && (day >= 1 && day <= 29)) : ((month == 2) && (year >= 1950 && year <= 2050) && (day >= 1 && day <= 28))}
 
-    string_view outcome = "Invalid";
-    return outcome;
-  } 
+  if ((thirtyDayRange) || (thirtyOneDayRange) || (februaryRange)) {
 
-  if ((month != "January") && (month != "February") && (month != "March") && (month != "April") && (month != "May") && (month != "June") && (month != "July")
-      && (month != "August") && (month != "September") && (month != "October") && (month != "November") && (month != "December")) {
+    string_view outcome = "valid";                                                    //Date Checker part
+    return outcome; 
+  } else {
 
-    string_view outcome = "Invalid";
-    return outcome;
-  }
-
- if (day < 1 || day > 31) {
-
-    string_view outcome = "Invalid";
+    string_view outcome = "invalid";
     return outcome;
   }
+}
 
-  if ((month == "April") || (month == "June") || (month == "September") || (month == "November")) {
+void output(int day, int month, int year, string_view outcome) {
 
-    if (day < 1 || day > 30) {
+  cout << day << "/" << month << "/" << year << " is a " << outcome << " date!\n";
+}
 
-      string_view outcome = "Invalid";
-      return outcome;
-    }
-  }
+int main() {
 
- bool FebruaryValid {(year % 4 == 0 || year % 400 == 0) && (year % 100 != 0)}
-
-  
+  int dayNumber = day(), int monthNumber = month(), int yearNumber = year(), string_view validResult = dateCheck(dayNumber, monthNumber, yearNumber), output(dayNumber, monthNumber, yearNumber, validResult);
+  return 0
 }
