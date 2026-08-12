@@ -123,5 +123,8 @@ int main() {
   firstScienceCombinedGrade::combinedScienceGradeOne();
   secondScienceCombinedGrade::combinedScienceGradeTwo();
   biology::biologyGrade();
+  chemistry::chemistryGrade();
+  physics::physicsGrade();
+  
   return 0;
 }
