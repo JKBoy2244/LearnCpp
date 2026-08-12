@@ -46,5 +46,6 @@ int main() {
 
   mathematics::mathsGrade();
   englishLanguage::englishLanguageGrade();
+  englishLiterature::englishLiteratureGrade();
   return 0;
 }
