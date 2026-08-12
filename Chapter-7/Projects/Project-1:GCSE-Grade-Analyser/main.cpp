@@ -6,6 +6,7 @@ using namespace std;
 #include "constants.h"                 //for constants::minGrade and constants::maxGrade
 #include "mathsGrade.h"                 //for mathematics::mathsGrade
 #include "englishLanguageGrade.h"      //for englishLanguage::englishLanguageGrade
+#include "englishLiteratureGrade.h"      //for englishLiterature::englishLiteratureGrade
 
 
 int mathsGrade() {
