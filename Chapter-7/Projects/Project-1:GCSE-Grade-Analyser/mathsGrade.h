@@ -1,5 +1,5 @@
-#ifndef MATHGRADE
-#define MATHGRADE
+#ifndef MATHSGRADE
+#define MATHSGRADE
 
 namespace mathematics {
 
