@@ -139,7 +139,119 @@ int tripleScienceTotal(int finalCount) {
   return totalSubjectsTriple;
 }
 
+string optionSubjectOne() {
 
+  cout << "Enter valid optional subject one which isn't the core subjects maths, english and science and actually exists and when typing, all lower cases please with no single upper case and if your subject
+           isn't there, write other (all lower case too)?\n";
+  [[maybe_unused]] string optionOne {};
+  getline(cin >> ws, optionOne);
+  bool validOptionOne {(optionOne == "geography") || (optionOne == "history") || (optionOne == "art") || (optionOne == "french") || (optionOne == "spanish") || (optionOne == "german") 
+                       || (optionOne == "italian") || (optionOne == "chinese mandarin") || (optionOne == "religious studies") || (optionOne == "latin") || (optionOne == "computer science")
+                       || (optionOne == "statistics") || (optionOne == "design & technology") || (optionOne == "physical education") || (optionOne == "other")}
+
+  if (validOptionOne) {
+    return optionOne;
+    
+  } else {
+
+    return " ";
+  }
+}
+
+string optionSubjectTwo(string optionOne) {
+
+  cout << "Enter valid optional subject two which isn't the core subjects maths, english and science and actually exists and when typing, all lower cases please with no single upper case and if your subject
+           isn't there, write other (all lower case too)?\n";
+  [[maybe_unused]] string optionTwo {};
+  getline(cin >> ws, optionTwo);
+  bool validOptionTwo {(optionTwo == "geography") || (optionTwo == "history") || (optionTwo == "art") || (optionTwo == "french") || (optionTwo == "spanish") || (optionTwo == "german") 
+                       || (optionTwo == "italian") || (optionTwo == "chinese mandarin") || (optionTwo == "religious studies") || (optionTwo == "latin") || (optionTwo == "computer science")
+                       || (optionTwo == "statistics") || (optionTwo == "design & technology") || (optionTwo == "physical education") || (optionTwo == "other")}
+
+  if (((validOptionTwo) && (optionTwo != optionOne)) || (optionTwo == "other")) {
+    return optionTwo;
+    
+  } else {
+
+    return " ";
+  }
+}
+
+string optionSubjectThree(string optionOne, string optionTwo) {
+
+  cout << "Enter valid optional subject three which isn't the core subjects maths, english and science and actually exists and when typing, all lower cases please with no single upper case and if your subject
+           isn't there, write other (all lower case too)?\n";
+  [[maybe_unused]] string optionThree {};
+  getline(cin >> ws, optionThree);
+  bool validOptionThree {(optionThree == "geography") || (optionThree == "history") || (optionThree == "art") || (optionThree == "french") || (optionThree == "spanish") || (optionThree == "german") 
+                       || (optionThree == "italian") || (optionThree == "chinese mandarin") || (optionThree == "religious studies") || (optionThree == "latin") || (optionThree == "computer science")
+                       || (optionThree == "statistics") || (optionThree == "design & technology") || (optionThree == "physical education") || (optionThree == "other")}
+
+  if (((validOptionThree) && (optionThree != optionTwo) && (optionThree != optionOne)) || (optionThree == "other")) {
+    return optionThree;
+    
+  } else {
+
+    return " ";
+  }
+}
+
+string optionSubjectFour(string optionOne, string optionTwo, string optionThree) {
+
+  cout << "Enter valid optional subject four which isn't the core subjects maths, english and science and actually exists and when typing, all lower cases please with no single upper case and if your subject
+           isn't there, write other (all lower case too)?\n";
+  [[maybe_unused]] string optionFour {};
+  getline(cin >> ws, optionFour);
+  bool validOptionFour {(optionFour == "geography") || (optionFour == "history") || (optionFour == "art") || (optionFour == "french") || (optionFour == "spanish") || (optionFour == "german") 
+                       || (optionFour == "italian") || (optionFour == "chinese mandarin") || (optionFour == "religious studies") || (optionFour == "latin") || (optionFour == "computer science")
+                       || (optionFour == "statistics") || (optionFour == "design & technology") || (optionFour == "physical education") || (optionFour == "other")}
+
+  if (((validOptionFour) && (optionFour != optionThree) && (optionFour != optionTwo) && (optionFour != optionOne)) || (optionFour == "other")) {
+    return optionFour;
+    
+  } else {
+
+    return " ";
+  }
+}
+
+string optionSubjectFive(string optionOne, string optionTwo, string optionThree, string optionFour) {
+
+  cout << "Enter valid optional subject five which isn't the core subjects maths, english and science and actually exists and when typing, all lower cases please with no single upper case and if your subject
+           isn't there, write other (all lower case too)?\n";
+  [[maybe_unused]] string optionFive {};
+  getline(cin >> ws, optionFive);
+  bool validOptionFive {(optionFive == "geography") || (optionFive == "history") || (optionFive == "art") || (optionFive == "french") || (optionFive == "spanish") || (optionFive == "german") 
+                       || (optionFive == "italian") || (optionFive == "chinese mandarin") || (optionFive == "religious studies") || (optionFive == "latin") || (optionFive == "computer science")
+                       || (optionFive == "statistics") || (optionFive == "design & technology") || (optionFive == "physical education") || (optionFive == "other")}
+
+  if (((validOptionFive) && (optionFive != optionFour) && (optionFive != optionThree) && (optionFive != optionTwo) && (optionFive != optionOne)) || (optionFive == "other")) {
+    return optionFive;
+    
+  } else {
+
+    return " ";
+  }
+}
+
+string optionSubjectSix(string optionOne, string optionTwo, string optionThree, string optionFour, string optionFive) {
+
+  cout << "Enter valid optional subject six which isn't the core subjects maths, english and science and actually exists and when typing, all lower cases please with no single upper case and if your subject
+           isn't there, write other (all lower case too)?\n";
+  [[maybe_unused]] string optionSix {};
+  getline(cin >> ws, optionSix);
+  bool validOptionSix {(optionSix == "geography") || (optionSix == "history") || (optionSix == "art") || (optionSix == "french") || (optionSix == "spanish") || (optionSix == "german") 
+                       || (optionSix == "italian") || (optionSix == "chinese mandarin") || (optionSix == "religious studies") || (optionSix == "latin") || (optionSix == "computer science")
+                       || (optionSix == "statistics") || (optionSix == "design & technology") || (optionSix == "physical education") || (optionSix == "other")}
+
+  if (((validOptionSix) && (optionSix != optionFive) && (optionSix != optionFour) && (optionSix != optionThree) && (optionSix != optionTwo) && (optionSix != optionOne)) || (optionSix == "other")) {
+    return optionSix;
+    
+  } else {
+
+    return " ";
+  }
+}
 
 int main() {
 
