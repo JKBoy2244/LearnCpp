@@ -16,6 +16,12 @@ using namespace std;
 #include "optionalCount.h"                //for option::optionalCount
 #include "combinedScienceTotal.h"          //for combinedTotalSubjects::combinedScienceTotal
 #include "trpleScienceTotal.h"           //for tripleTotalSubjects::tripleScienceTotal
+#include "optionSubjectOne.h"              //for optionOne::optionSubjectOne
+#include "optionSubjectTwo.h"               //for optionTwo::optionSubjectTwo
+#include "optionSubjectThree.h"              //for optionThree::optionSubjectThree
+#include "optionSubjectFour.h"               //for optionFour::optionSubjectFour
+#include "optionSubjectFive.h"               //for optionFive::optionSubjectFive
+#include "optionSubjectSix.h"                  //for optionSix::optionSubjectSix
 
 int mathsGrade() {
 
@@ -267,6 +273,8 @@ int main() {
   option::optionalCount();
   combinedTotalSubjects::combinedScienceTotal(finalCount);
   tripleTotalSubjects::tripleScienceTotal(finalCount);
+  optionOne::optionSubjectOne();
+  
   
   return 0;
 }
