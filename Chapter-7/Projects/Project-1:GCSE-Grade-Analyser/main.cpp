@@ -13,7 +13,7 @@ using namespace std;
 
 int mathsGrade() {
 
-  cout << "Enter your GCSE mathematics grade?\n";
+  cout << "Enter your GCSE mathematics grade?\n"; 
   int mathGrade {};
   cin >> mathGrade;
   bool validMathGrade {mathGrade >= constants::minGrade && mathGrade <= constants::maxGrade};
