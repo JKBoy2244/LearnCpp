@@ -4,7 +4,7 @@ using namespace std;
 
 #include "chooseScience.h"
 
-namespace ScienceChoose {
+namespace scienceChoose {
   string chooseScience() {
 
     cout << "Did you take triple science or combined science, type either triple or combined please (nothing else)?\n";
