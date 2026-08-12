@@ -13,6 +13,7 @@ using namespace std;
 #include "biologyGrade.h"                     //for biology::biologyGrade
 #include "chemistryGrade.h"                 //for chemistry::chemistryGrade
 #include "physicsGrade.h"                 //for physics::physicsGrade
+#include "optionalCount.h"                //for option::optionalCount
 
 int mathsGrade() {
 
@@ -114,6 +115,16 @@ int physicsGrade() {
 
 }
 
+int optionalCount() {
+
+  cout << "How many option choices are you taking for GCSEs(maximum 6)?\n"
+  const unsigned int optionCount {};
+  cin >> optionCount;
+  bool validCount {optionCount >= constants::minOptionCount && optionCount <= constants::maxOptionCount};
+  int finalCount {(optionCount) ? optionCount : 0};
+  return finalCount;
+}
+
 int main() {
 
   mathematics::mathsGrade();
@@ -125,6 +136,7 @@ int main() {
   biology::biologyGrade();
   chemistry::chemistryGrade();
   physics::physicsGrade();
+  option::optionalCount();
   
   return 0;
 }
