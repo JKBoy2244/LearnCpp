@@ -14,6 +14,8 @@ using namespace std;
 #include "chemistryGrade.h"                 //for chemistry::chemistryGrade
 #include "physicsGrade.h"                 //for physics::physicsGrade
 #include "optionalCount.h"                //for option::optionalCount
+#include "combinedScienceTotal.h"          //for combinedTotalSubjects::combinedScienceTotal
+#include "trpleScienceTotal.h"           //for tripleTotalSubjects::tripleScienceTotal
 
 int mathsGrade() {
 
@@ -123,6 +125,18 @@ int optionalCount() {
   bool validCount {optionCount >= constants::minOptionCount && optionCount <= constants::maxOptionCount};
   int finalCount {(optionCount) ? optionCount : 0};
   return finalCount;
+}
+
+int combinedScienceTotal(int finalCount) {
+
+  [[maybe_unused]] int totalSubjectsCombined {5 + finalCount};
+  return totalSubjectsCombined;
+}
+
+int tripleScienceTotal(int finalCount) {
+
+  [[maybe_unused]] int totalSubjectsTriple {6 + finalCount};
+  return totalSubjectsTriple;
 }
 
 int main() {
