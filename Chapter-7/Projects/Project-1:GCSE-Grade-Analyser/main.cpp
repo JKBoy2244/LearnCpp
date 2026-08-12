@@ -25,22 +25,22 @@ int mathsGrade() {
 int englishLanguageGrade() {
 
   cout << "Enter your GCSE english language grade?\n";
-  int englishLanguageGrade {};
-  cin >> englishLanguageGrade;
-  bool validEnglishLanguageGrade {englishLanguageGrade >= constants::minGrade && englishLanguageGrade <= constants::maxGrade};
-  int finalEnglishLanguageGrade {(validEnglishLanguageGrade) ? englishLanguageGrade : 0};
-  return finalEnglishLanguageGrade;
+  int LanguageGrade {};
+  cin >> LanguageGrade;
+  bool validLanguageGrade {LanguageGrade >= constants::minGrade && LanguageGrade <= constants::maxGrade};
+  int finalLanguageGrade {(validLanguageGrade) ? LanguageGrade : 0};
+  return finalLanguageGrade;
 
 }
 
 int englishLiteratureGrade() {
 
   cout << "Enter your GCSE english literature grade?\n";
-  int englishLiteratureGrade {};
-  cin >> englishLiteratureGrade;
-  bool validEnglishLiteratureGrade {englishLiteratureGrade >= constants::minGrade && mathGrade <= constants::maxGrade};
-  int finalEnglishLiteratureGrade {(validEnglishLiteratureGrade) ? englishLiteratureGrade : 0};
-  return finalEnglishLiteratureGrade;
+  int LiteratureGrade {};
+  cin >> LiteratureGrade;
+  bool validLiteratureGrade {LiteratureGrade >= constants::minGrade && mathGrade <= constants::maxGrade};
+  int finalLiteratureGrade {(validLiteratureGrade) ? LiteratureGrade : 0};
+  return finalLiteratureGrade;
 
 }
 
@@ -54,6 +54,17 @@ string chooseScience() {
   } else {
     return 0;
   }
+}
+
+int combinedScienceGradeOne() {
+
+  cout << "Enter your first GCSE combined science grade?\n";
+  [[maybe_unused]] int scienceGradeOne {};
+  cin >> scienceGradeOne;
+  bool validScienceGradeOne {scienceGradeOne >= constants::minGrade && scienceGradeOne <= constants::maxGrade};
+  int finalScienceGradeOne {(validscienceGradeOne) ? scienceGradeOne : 0};
+  return finalscienceGradeOne;
+
 }
 
 int main() {
