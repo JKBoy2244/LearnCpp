@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+#include "constants.h" 
 #include "combinedScienceGradeTwo.h"
 
 namespace secondScienceCombinedGrade {
