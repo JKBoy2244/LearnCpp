@@ -4,7 +4,7 @@ using namespace std;
 #include "constants.h"
 #include "optionalCount.h"
 
-namespace Option {
+namespace option {
   int optionalCount() {
 
     cout << "How many option choices are you taking for GCSEs(maximum 6)?\n"
