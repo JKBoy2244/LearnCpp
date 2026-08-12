@@ -8,11 +8,11 @@ namespace englishLanguage {
   int englishLanguageGrade() {
 
     cout << "Enter your GCSE english language grade?\n";
-    int englishLanguageGrade {};
-    cin >> englishLanguageGrade;
-    bool validEnglishLanguageGrade {englishLanguageGrade >= constants::minGrade && englishLanguageGrade <= constants::maxGrade};
-    int finalEnglishLanguageGrade {(validEnglishLanguageGrade) ? englishLanguageGrade : 0};
-    return finalEnglishLanguageGrade;
+    int LanguageGrade {};
+    cin >> LanguageGrade;
+    bool validLanguageGrade {LanguageGrade >= constants::minGrade && LanguageGrade <= constants::maxGrade};
+    int finalLanguageGrade {(validLanguageGrade) ? LanguageGrade : 0};
+    return finalLanguageGrade;
 
   }
 }
