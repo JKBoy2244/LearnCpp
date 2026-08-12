@@ -2,7 +2,7 @@
 using namespace std;
 
 #include "constants.h"
-#include "firstScienceCombinedGrade.h"
+#include "combinedScienceGradeOne.h"
 
 namespace firstScienceCombinedGrade {
   int combinedScienceGradeOne() {
