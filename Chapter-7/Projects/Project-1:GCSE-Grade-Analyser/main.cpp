@@ -22,6 +22,12 @@ using namespace std;
 #include "optionSubjectFour.h"               //for optionFour::optionSubjectFour
 #include "optionSubjectFive.h"               //for optionFive::optionSubjectFive
 #include "optionSubjectSix.h"                  //for optionSix::optionSubjectSix
+#include "optionOneGrade.h"                   //for oneOption::optionOneGrade
+#include "optionTwoGrade.h"                   //for twoOption::optionTwoGrade
+#include "optionThreeGrade.h"                 //for threeOption::optionThreeGrade
+#include "optionFourGrade.h"                  //for fourOption::optionFourGrade
+#include "optionFiveGrade.h"                 //for fiveOption::optionFiveGrade
+#include "optionSixGrade.h"                    //for sixOption::optionSixGrade
 
 int mathsGrade() {
 
@@ -257,6 +263,72 @@ string optionSubjectSix(string optionOne, string optionTwo, string optionThree, 
 
     return " ";
   }
+}
+
+int optionOneGrade(string optionOne) {
+
+  cout << "Enter your GCSE " << optionOne << " grade?\n"; 
+  [[maybe_unused]] int optOneGrade {};
+  cin >> optOneGrade;
+  bool validOptOneGrade {optOneGrade >= constants::minGrade && optOneGrade <= constants::maxGrade};
+  int finalOptOneGrade {(validOptOneGrade) ? optOneGrade : 0};
+  return finalOptOneGrade;
+
+}
+
+int optionTwoGrade(string optionTwo) {
+
+  cout << "Enter your GCSE " << optionTwo << " grade?\n"; 
+  [[maybe_unused]] int optOTwoGrade {};
+  cin >> optTwoGrade;
+  bool validOptTwoGrade {optTwoGrade >= constants::minGrade && optTwoGrade <= constants::maxGrade};
+  int finalOptTwoGrade {(validOptTwoGrade) ? optTwoGrade : 0};
+  return finalOptTwoGrade; 
+
+}
+
+int optionThreeGrade(string optionThree) {
+
+  cout << "Enter your GCSE " << optionThree << " grade?\n"; 
+  [[maybe_unused]] int optThreeGrade {};
+  cin >> optThreeGrade;
+  bool validOptThreeGrade {optThreeGrade >= constants::minGrade && optThreeGrade <= constants::maxGrade};
+  int finalOptThreeGrade {(validOptThreeGrade) ? optThreeGrade : 0};
+  return finalOptThreeGrade;  
+
+}
+
+int optionFourGrade(string optionFour) {
+
+  cout << "Enter your GCSE " << optionFour << " grade?\n"; 
+  [[maybe_unused]] int optFourGrade {};
+  cin >> optFourGrade;
+  bool validOptFourGrade {optFourGrade >= constants::minGrade && optFourGrade <= constants::maxGrade};
+  int finalOptFourGrade {(validOptFourGrade) ? optFourGrade : 0};
+  return finalOptFourGrade; 
+
+}
+
+int optionFiveGrade(string optionFive) {
+
+  cout << "Enter your GCSE " << optionFive << " grade?\n"; 
+  [[maybe_unused]] int optFiveGrade {};
+  cin >> optFiveGrade;
+  bool validOptFiveGrade {optFiveGrade >= constants::minGrade && optFiveGrade <= constants::maxGrade};
+  int finalOptFiveGrade {(validOptFiveGrade) ? optFiveGrade : 0};
+  return finalOptFiveGrade; 
+
+}
+
+int optionSixGrade(string optionSix) {
+
+  cout << "Enter your GCSE " << optionSix << " grade?\n"; 
+  [[maybe_unused]] int optSixGrade {};
+  cin >> optSixGrade;
+  bool validOptSixGrade {optSixGrade >= constants::minGrade && optSixGrade <= constants::maxGrade};
+  int finalOptSixGrade {(validOptSixGrade) ? optSixGrade : 0};
+  return finalOptSixGrade;
+
 }
 
 int main() {
