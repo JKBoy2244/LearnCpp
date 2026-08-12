@@ -139,6 +139,8 @@ int tripleScienceTotal(int finalCount) {
   return totalSubjectsTriple;
 }
 
+
+
 int main() {
 
   mathematics::mathsGrade();
