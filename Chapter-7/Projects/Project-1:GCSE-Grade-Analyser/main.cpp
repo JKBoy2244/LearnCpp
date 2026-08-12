@@ -10,6 +10,7 @@ using namespace std;
 #include "chooseScience.h"                 //for scienceChoose::chooseScience
 #include "combinedScienceGradeOne.h"     //for firstScienceCombinedGrade::combinedScienceGradeOne
 #include "combinedScienceGradeTwo.h"      //for secondScienceCombinedGrade::combinedScienceGradeTwo
+#include "biologyGrade.h"                     //for biology::biologyGrade
 
 int mathsGrade() {
 
