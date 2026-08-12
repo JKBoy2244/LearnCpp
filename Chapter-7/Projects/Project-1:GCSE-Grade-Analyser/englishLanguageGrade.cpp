@@ -12,7 +12,7 @@ namespace englishLanguage {
     cin >> englishLanguageGrade;
     bool validEnglishLanguageGrade {englishLanguageGrade >= constants::minGrade && englishLanguageGrade <= constants::maxGrade};
     int finalEnglishLanguageGrade {(validEnglishLanguageGrade) ? englishLanguageGrade : 0};
-    return finalEnglishLanguage;
+    return finalEnglishLanguageGrade;
 
   }
 }
