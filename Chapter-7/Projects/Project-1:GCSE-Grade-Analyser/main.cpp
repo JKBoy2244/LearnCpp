@@ -78,7 +78,6 @@ int combinedScienceGradeTwo() {
 
 }
 
-
 int main() {
 
   mathematics::mathsGrade();
