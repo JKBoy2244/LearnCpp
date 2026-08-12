@@ -120,5 +120,6 @@ int main() {
   scienceChoose::chooseScience();
   firstScienceCombinedGrade::combinedScienceGradeOne();
   secondScienceCombinedGrade::combinedScienceGradeTwo();
+  biology::biologyGrade();
   return 0;
 }
