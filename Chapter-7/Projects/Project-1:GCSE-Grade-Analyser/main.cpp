@@ -4,7 +4,7 @@
 using namespace std;
 
 #include "constants.h"                 //for constants::minGrade and constants::maxGrade
-#include "mathGrade.h"                 //for mathematics::mathsGrade
+#include "mathsGrade.h"                 //for mathematics::mathsGrade
 
 /*
 
