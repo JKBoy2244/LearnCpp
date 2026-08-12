@@ -274,6 +274,11 @@ int main() {
   combinedTotalSubjects::combinedScienceTotal(finalCount);
   tripleTotalSubjects::tripleScienceTotal(finalCount);
   optionOne::optionSubjectOne();
+  optionTwo::optionSubjectTwo(optionOne);
+  optionThree::optionSubjectThree(optionOne, optionTwo);
+  optionFour::optionSubjectFour(optionOne, optionTwo, optionThree);
+  optionFive::optionSubjectFive(optionOne, optionTwo, optionThree, optionFour);
+  optionSix::optionSubjectSix(optionOne, optionTwo, optionThree, optionFour, optionFive);
   
   
   return 0;
