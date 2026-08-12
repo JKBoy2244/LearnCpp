@@ -78,6 +78,39 @@ int combinedScienceGradeTwo() {
 
 }
 
+int biologyGrade() {
+
+  cout << "Enter your GCSE biology grade?\n"; 
+  [[maybe_unused]] int biologyGrade {};
+  cin >> biologyGrade;
+  bool validBiologyGrade {biologyGrade >= constants::minGrade && biologyGrade <= constants::maxGrade};
+  int finalBiologyGrade {(validBiologyGrade) ? biologyGrade : 0};
+  return finalBiologyGrade;
+
+}
+
+int chemistryGrade() {
+
+  cout << "Enter your GCSE chemistry grade?\n"; 
+  [[maybe_unused]] int chemistryGrade {};
+  cin >> chemistryGrade;
+  bool validChemistryGrade {chemistryGrade >= constants::minGrade && chemistryGrade <= constants::maxGrade};
+  int finalChemistryGrade {(validChemistryGrade) ? chemistryGrade : 0};
+  return finalChemistryGrade;
+
+}
+
+int physicsGrade() {
+
+  cout << "Enter your GCSE physics grade?\n"; 
+  [[maybe_unused]] int physicsGrade {};
+  cin >> physicsGrade;
+  bool validMathGrade {mathGrade >= constants::minGrade && mathGrade <= constants::maxGrade};
+  int finalMathGrade {(validMathGrade) ? mathGrade : 0};
+  return finalMathGrade;
+
+}
+
 int main() {
 
   mathematics::mathsGrade();
