@@ -11,8 +11,6 @@ using namespace std;
 #include "combinedScienceGradeOne.h"     //for firstScienceCombinedGrade::combinedScienceGradeOne
 #include "combinedScienceGradeTwo.h"      //for secondScienceCombinedGrade::combinedScienceGradeTwo
 
-
-
 int mathsGrade() {
 
   cout << "Enter your GCSE mathematics grade?\n";
