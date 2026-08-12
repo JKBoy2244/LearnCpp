@@ -151,6 +151,8 @@ int main() {
   chemistry::chemistryGrade();
   physics::physicsGrade();
   option::optionalCount();
+  combinedTotalSubjects::combinedScienceTotal(finalCount);
+  tripleTotalSubjects::tripleScienceTotal(finalCount);
   
   return 0;
 }
