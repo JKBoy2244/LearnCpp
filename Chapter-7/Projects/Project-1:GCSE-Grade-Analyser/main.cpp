@@ -7,6 +7,8 @@ using namespace std;
 #include "mathsGrade.h"                 //for mathematics::mathsGrade
 #include "englishLanguageGrade.h"      //for englishLanguage::englishLanguageGrade
 #include "englishLiteratureGrade.h"      //for englishLiterature::englishLiteratureGrade
+#include "chooseScience.h"                 //for scienceChoose::chooseScience
+
 
 
 int mathsGrade() {
@@ -27,7 +29,7 @@ int englishLanguageGrade() {
   cin >> englishLanguageGrade;
   bool validEnglishLanguageGrade {englishLanguageGrade >= constants::minGrade && englishLanguageGrade <= constants::maxGrade};
   int finalEnglishLanguageGrade {(validEnglishLanguageGrade) ? englishLanguageGrade : 0};
-  return finalEnglishLanguage;
+  return finalEnglishLanguageGrade;
 
 }
 
@@ -42,10 +44,23 @@ int englishLiteratureGrade() {
 
 }
 
+string chooseScience() {
+
+  cout << "Did you take triple science or combined science, type either triple or combined please (nothing else)?\n";
+  string scienceOption {};
+  cin >> scienceOption;
+  if (scienceOption == "triple" || scienceOption == "combined") {
+    return scienceOption;
+  } else {
+    return 0;
+  }
+}
+
 int main() {
 
   mathematics::mathsGrade();
   englishLanguage::englishLanguageGrade();
   englishLiterature::englishLiteratureGrade();
+  scienceChoose::chooseScience();
   return 0;
 }
