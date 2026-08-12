@@ -351,6 +351,13 @@ int main() {
   optionFour::optionSubjectFour(optionOne, optionTwo, optionThree);
   optionFive::optionSubjectFive(optionOne, optionTwo, optionThree, optionFour);
   optionSix::optionSubjectSix(optionOne, optionTwo, optionThree, optionFour, optionFive);
+  oneOption::optionOneGrade(optionOne);
+  twoOption::optionTwoGrade(optionTwo);
+  threeOption::optionThreeGrade(optionThree);
+  fourOption::optionFourGrade(optionFour);
+  fiveOption::optionFiveGrade(optionFive);
+  sixOption::optionSixGrade(optionSix);
+  
   
   
   return 0;
