@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-#include "mathGrade.h"  //for mathematics::mathsGrade
+#include "mathsGrade.h"  //for mathematics::mathsGrade
 
 namespace mathematics {
 
