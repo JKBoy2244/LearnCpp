@@ -11,6 +11,8 @@ using namespace std;
 #include "combinedScienceGradeOne.h"     //for firstScienceCombinedGrade::combinedScienceGradeOne
 #include "combinedScienceGradeTwo.h"      //for secondScienceCombinedGrade::combinedScienceGradeTwo
 #include "biologyGrade.h"                     //for biology::biologyGrade
+#include "chemistryGrade.h"                 //for chemistry::chemistryGrade
+#include "physicsGrade.h"                 //for physics::physicsGrade
 
 int mathsGrade() {
 
