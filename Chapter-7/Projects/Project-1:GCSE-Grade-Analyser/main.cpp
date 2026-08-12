@@ -8,6 +8,7 @@ using namespace std;
 #include "englishLanguageGrade.h"      //for englishLanguage::englishLanguageGrade
 #include "englishLiteratureGrade.h"      //for englishLiterature::englishLiteratureGrade
 #include "chooseScience.h"                 //for scienceChoose::chooseScience
+#include "combinedScienceGradeOne.h"     //for firstScienceCombinedGrade::combinedScienceGradeOne
 
 
 
@@ -73,5 +74,6 @@ int main() {
   englishLanguage::englishLanguageGrade();
   englishLiterature::englishLiteratureGrade();
   scienceChoose::chooseScience();
+  firstScienceCombinedGrade::combinedScienceGradeOne();
   return 0;
 }
