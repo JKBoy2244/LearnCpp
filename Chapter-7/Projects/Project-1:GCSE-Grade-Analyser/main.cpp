@@ -9,6 +9,7 @@ using namespace std;
 #include "englishLiteratureGrade.h"      //for englishLiterature::englishLiteratureGrade
 #include "chooseScience.h"                 //for scienceChoose::chooseScience
 #include "combinedScienceGradeOne.h"     //for firstScienceCombinedGrade::combinedScienceGradeOne
+#include "combinedScienceGradeTwo.h"      //for secondScienceCombinedGrade::combinedScienceGradeTwo
 
 
 
@@ -68,6 +69,18 @@ int combinedScienceGradeOne() {
 
 }
 
+int combinedScienceGradeTwo() {
+
+  cout << "Enter your second GCSE combined science grade?\n";
+  [[maybe_unused]] int scienceGradeTwo {};
+  cin >> scienceGradeTwo;
+  bool validScienceGradeTwo {scienceGradeTwo >= constants::minGrade && scienceGradeTwo <= constants::maxGrade};
+  int finalScienceGradeTwo {(validscienceGradeTwo) ? scienceGradeTwo : 0};
+  return finalscienceGradeTwo;
+
+}
+
+
 int main() {
 
   mathematics::mathsGrade();
@@ -75,5 +88,6 @@ int main() {
   englishLiterature::englishLiteratureGrade();
   scienceChoose::chooseScience();
   firstScienceCombinedGrade::combinedScienceGradeOne();
+  secondScienceCombinedGrade::combinedScienceGradeTwo();
   return 0;
 }
