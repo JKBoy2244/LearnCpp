@@ -6,6 +6,8 @@ using namespace std;
 #include "constants.h"                 //for constants::minGrade and constants::maxGrade
 #include "mathGrade.h"                 //for mathematics::mathsGrade
 
+/*
+
 int mathsGrade() {
 
   cout << "Enter your GCSE mathematics grade?\n";
@@ -17,7 +19,10 @@ int mathsGrade() {
 
 }
 
+*/
+
 int main() {
 
+  mathematics::mathsGrade();
   return 0;
 }
