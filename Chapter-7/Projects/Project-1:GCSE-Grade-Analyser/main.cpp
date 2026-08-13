@@ -331,7 +331,62 @@ int optionSixGrade(string optionSix) {
 
 }
 
+double averageFiveSubjectsPartOne(int finalCount, int finalMathGrade, int finalEnglishLanguageGrade, int finalEnglishLiteratureGrade, int finalScienceGradeOne, int finalScienceGradeTwo) {
 
+  int totalScore {finalMathGrade + finalEnglishLanguageGrade + finalEnglishLiteratureGrade + finalScienceGradeOne + finalScienceGradeTwo};
+  double averageFive { static_cast<double>(totalScore) / static_cast<double>(finalCount) };
+  return averageFive;
+}
+
+double averageSixSubjectsPartOne(int finalCount, int finalMathGrade, int finalEnglishLanguageGrade, int finalEnglishLiteratureGrade, int finalScienceGradeOne, int finalScienceGradeTwo, int optionOneGrade) {
+
+  int totalScore {finalMathGrade + finalEnglishLanguageGrade + finalEnglishLiteratureGrade + finalScienceGradeOne + finalScienceGradeTwo + optionOneGrade};
+  double averageSix { static_cast<double>(totalScore) / static_cast<double>(finalCount) };
+  return averageSix;
+}
+
+double averageSevenSubjectsPartOne(int finalCount, int finalMathGrade, int finalEnglishLanguageGrade, int finalEnglishLiteratureGrade, int finalScienceGradeOne, int finalScienceGradeTwo
+                                   , int optionOneGrade, int optionTwoGrade) {
+
+  int totalScore {finalMathGrade + finalEnglishLanguageGrade + finalEnglishLiteratureGrade + finalScienceGradeOne + finalScienceGradeTwo + optionOneGrade + optionTwoGrade};
+  double averageSeven { static_cast<double>(totalScore) / static_cast<double>(finalCount) };
+  return averageSeven;
+}
+
+double averageEightSubjectsPartOne(int finalCount, int finalMathGrade, int finalEnglishLanguageGrade, int finalEnglishLiteratureGrade, int finalScienceGradeOne, int finalScienceGradeTwo
+                                   , int optionOneGrade, int optionTwoGrade, int optionThreeGrade) {
+
+  int totalScore {finalMathGrade + finalEnglishLanguageGrade + finalEnglishLiteratureGrade + finalScienceGradeOne + finalScienceGradeTwo + optionOneGrade + optionTwoGrade + optionThreeGrade};
+  double averageEight { static_cast<double>(totalScore) / static_cast<double>(finalCount) };
+  return averageEight;
+}
+
+double averageNineSubjectsPartOne(int finalCount, int finalMathGrade, int finalEnglishLanguageGrade, int finalEnglishLiteratureGrade, int finalScienceGradeOne, int finalScienceGradeTwo
+                                  , int optionOneGrade, int optionTwoGrade, int optionThreeGrade, int optionFourGrade) {
+
+  int totalScore {finalMathGrade + finalEnglishLanguageGrade + finalEnglishLiteratureGrade + finalScienceGradeOne + finalScienceGradeTwo
+                  + optionOneGrade + optionTwoGrade + optionThreeGrade + optionFourGrade};
+  double averageNine { static_cast<double>(totalScore) / static_cast<double>(finalCount) };
+  return averageNine;
+}
+
+double averageTenSubjectsPartOne(int finalCount, int finalMathGrade, int finalEnglishLanguageGrade, int finalEnglishLiteratureGrade, int finalScienceGradeOne, int finalScienceGradeTwo
+                                 , int optionOneGrade, int optionTwoGrade, int optionThreeGrade, int optionFourGrade, int optionFiveGrade) {
+
+  int totalScore {finalMathGrade + finalEnglishLanguageGrade + finalEnglishLiteratureGrade + finalScienceGradeOne + finalScienceGradeTwo
+                  + optionOneGrade + optionTwoGrade + optionThreeGrade + optionFourGrade + optionFiveGrade};
+  double averageTen { static_cast<double>(totalScore) / static_cast<double>(finalCount) };
+  return averageTen;
+}
+
+double averageElevenSubjectsPartOne(int finalCount, int finalMathGrade, int finalEnglishLanguageGrade, int finalEnglishLiteratureGrade, int finalScienceGradeOne, int finalScienceGradeTwo
+                                    , int optionOneGrade, int optionTwoGrade, int optionThreeGrade, int optionFourGrade, int optionFiveGrade, int optionSixGrade) {
+
+  int totalScore {finalMathGrade + finalEnglishLanguageGrade + finalEnglishLiteratureGrade + finalScienceGradeOne + finalScienceGradeTwo
+                   + optionOneGrade + optionTwoGrade + optionThreeGrade + optionFourGrade + optionFiveGrade + optionSixGrade};
+  double averageEleven { static_cast<double>(totalScore) / static_cast<double>(finalCount) };
+  return averageEleven;
+}
 
 int main() {
 
