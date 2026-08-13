@@ -624,63 +624,108 @@ int main() {
      }
 
      if (totalSubjectsTriple == 7) {
- 
+
+         int optionOne = optionOne::optionSubjectOne();
+         int finalOptionOneGrade = oneOption::optionOneGrade(optionOne);
          double average = averageSubjectsTwo::averageSubjectsPartTwo(finalCount, finalMathGrade, finalEnglishLanguageGrade, finalEnglishLiteratureGrade, finalBiologyGrade, finalChemistryGrade,
-                                              finalPhysicsGrade, optionOneGrade, optionTwoGrade, optionThreeGrade, optionFourGrade, optionFiveGrade, optionSixGrade);
+                                              finalPhysicsGrade, finalOptionOneGrade, finalOptionTwoGrade, finalOptionThreeGrade, finalOptionFourGrade, finalOptionFiveGrade, finalOptionSixGrade);
          string_view gradeComment = tier::gradeTier(average);
          result::resultStatement(average, gradeComment, finalCount);
      }
 
      if (totalSubjectsTriple == 8) {
- 
+
+         int optionOne = optionOne::optionSubjectOne();
+         int finalOptionOneGrade = oneOption::optionOneGrade(optionOne);
+         int optionTwo = optionTwo::optionSubjectTwo(optionOne);
+         int finalOptionTwoGrade = twoOption::optionTwoGrade(optionTwo);
          double average = averageSubjectsTwo::averageSubjectsPartTwo(finalCount, finalMathGrade, finalEnglishLanguageGrade, finalEnglishLiteratureGrade, finalBiologyGrade, finalChemistryGrade,
-                                              finalPhysicsGrade, optionOneGrade, optionTwoGrade, optionThreeGrade, optionFourGrade, optionFiveGrade, optionSixGrade);
+                                              finalPhysicsGrade, finalOptionOneGrade, finalOptionTwoGrade, finalOptionThreeGrade, finalOptionFourGrade, finalOptionFiveGrade, finalOptionSixGrade);
          string_view gradeComment = tier::gradeTier(average);
          result::resultStatement(average, gradeComment, finalCount);
      }
 
      if (totalSubjectsTriple == 9) {
- 
+
+         int optionOne = optionOne::optionSubjectOne();
+         int finalOptionOneGrade = oneOption::optionOneGrade(optionOne);
+         int optionTwo = optionTwo::optionSubjectTwo(optionOne);
+         int finalOptionTwoGrade = twoOption::optionTwoGrade(optionTwo);
+         int optionThree = optionThree::optionSubjectThree(optionOne, optionTwo);
+         int finalOptionThreeGrade = threeOption::optionThreeGrade(optionThree);
          double average = averageSubjectsTwo::averageSubjectsPartTwo(finalCount, finalMathGrade, finalEnglishLanguageGrade, finalEnglishLiteratureGrade, finalBiologyGrade, finalChemistryGrade,
-                                              finalPhysicsGrade, optionOneGrade, optionTwoGrade, optionThreeGrade, optionFourGrade, optionFiveGrade, optionSixGrade);
+                                              finalPhysicsGrade, finalOptionOneGrade, finalOptionTwoGrade, finalOptionThreeGrade, finalOptionFourGrade, finalOptionFiveGrade, finalOptionSixGrade);
          string_view gradeComment = tier::gradeTier(average);
          result::resultStatement(average, gradeComment, finalCount);
      }
 
      if (totalSubjectsTriple == 10) {
- 
+
+         int optionOne = optionOne::optionSubjectOne();
+         int finalOptionOneGrade = oneOption::optionOneGrade(optionOne);
+         int optionTwo = optionTwo::optionSubjectTwo(optionOne);
+         int finalOptionTwoGrade = twoOption::optionTwoGrade(optionTwo);
+         int optionThree = optionThree::optionSubjectThree(optionOne, optionTwo);
+         int finalOptionThreeGrade = threeOption::optionThreeGrade(optionThree);
+         int optionFour = optionFour::optionSubjectFour(optionOne, optionTwo, optionThree);
+         int finalOptionFourGrade = fourOption::optionFourGrade(optionFour);
          double average = averageSubjectsTwo::averageSubjectsPartTwo(finalCount, finalMathGrade, finalEnglishLanguageGrade, finalEnglishLiteratureGrade, finalBiologyGrade, finalChemistryGrade,
-                                              finalPhysicsGrade, optionOneGrade, optionTwoGrade, optionThreeGrade, optionFourGrade, optionFiveGrade, optionSixGrade);
+                                              finalPhysicsGrade, finalOptionOneGrade, finalOptionTwoGrade, finalOptionThreeGrade, finalOptionFourGrade, finalOptionFiveGrade, finalOptionSixGrade);
          string_view gradeComment = tier::gradeTier(average);
          result::resultStatement(average, gradeComment, finalCount);
      }
 
      if (totalSubjectsTriple == 11) {
- 
+
+         
+         int optionOne = optionOne::optionSubjectOne();
+         int finalOptionOneGrade = oneOption::optionOneGrade(optionOne);
+         int optionTwo = optionTwo::optionSubjectTwo(optionOne);
+         int finalOptionTwoGrade = twoOption::optionTwoGrade(optionTwo);
+         int optionThree = optionThree::optionSubjectThree(optionOne, optionTwo);
+         int finalOptionThreeGrade = threeOption::optionThreeGrade(optionThree);
+         int optionFour = optionFour::optionSubjectFour(optionOne, optionTwo, optionThree);
+         int finalOptionFourGrade = fourOption::optionFourGrade(optionFour);
+         int optionFive = optionFive::optionSubjectFive(optionOne, optionTwo, optionThree, optionFour);
+         int finalOptionFiveGrade = fiveOption::optionFiveGrade(optionFive);
          double average = averageSubjectsTwo::averageSubjectsPartTwo(finalCount, finalMathGrade, finalEnglishLanguageGrade, finalEnglishLiteratureGrade, finalBiologyGrade, finalChemistryGrade,
-                                              finalPhysicsGrade, optionOneGrade, optionTwoGrade, optionThreeGrade, optionFourGrade, optionFiveGrade, optionSixGrade);
+                                              finalPhysicsGrade, finalOptionOneGrade, finalOptionTwoGrade, finalOptionThreeGrade, finalOptionFourGrade, finalOptionFiveGrade, finalOptionSixGrade);
          string_view gradeComment = tier::gradeTier(average);
          result::resultStatement(average, gradeComment, finalCount);
      }
 
      if (totalSubjectsTriple == 12) {
- 
+      
+         int optionOne = optionOne::optionSubjectOne();
+         int finalOptionOneGrade = oneOption::optionOneGrade(optionOne);
+         int optionTwo = optionTwo::optionSubjectTwo(optionOne);
+         int finalOptionTwoGrade = twoOption::optionTwoGrade(optionTwo);
+         int optionThree = optionThree::optionSubjectThree(optionOne, optionTwo);
+         int finalOptionThreeGrade = threeOption::optionThreeGrade(optionThree);
+         int optionFour = optionFour::optionSubjectFour(optionOne, optionTwo, optionThree);
+         int finalOptionFourGrade = fourOption::optionFourGrade(optionFour);
+         int optionFive = optionFive::optionSubjectFive(optionOne, optionTwo, optionThree, optionFour);
+         int finalOptionFiveGrade = fiveOption::optionFiveGrade(optionFive);
+         int optionSix = optionSix::optionSubjectSix(optionOne, optionTwo, optionThree, optionFour, optionFive);
+         int finalOptionSixGrade = sixOption::optionSixGrade(optionSix);
          double average = averageSubjectsTwo::averageSubjectsPartTwo(finalCount, finalMathGrade, finalEnglishLanguageGrade, finalEnglishLiteratureGrade, finalBiologyGrade, finalChemistryGrade,
-                                              finalPhysicsGrade, optionOneGrade, optionTwoGrade, optionThreeGrade, optionFourGrade, optionFiveGrade, optionSixGrade);
+                                              finalPhysicsGrade, finalOptionOneGrade, finalOptionTwoGrade, finalOptionThreeGrade, finalOptionFourGrade, finalOptionFiveGrade, finalOptionSixGrade);
          string_view gradeComment = tier::gradeTier(average);
          result::resultStatement(average, gradeComment, finalCount);
      }
+   }
 
-     
-  }
-  //firstScienceCombinedGrade::combinedScienceGradeOne();
-  //secondScienceCombinedGrade::combinedScienceGradeTwo();
-  //biology::biologyGrade();
-  //chemistry::chemistryGrade();
-  //physics::physicsGrade();
-  //option::optionalCount();
-  //combinedTotalSubjects::combinedScienceTotal(finalCount);
-  //tripleTotalSubjects::tripleScienceTotal(finalCount);
+   cout << "Sorry, your input is invalid unfortunately so the program will have to halt here I'm afraid!\n";
+
+/*
+  firstScienceCombinedGrade::combinedScienceGradeOne();
+  secondScienceCombinedGrade::combinedScienceGradeTwo();
+  biology::biologyGrade();
+  chemistry::chemistryGrade();
+  physics::physicsGrade();
+  option::optionalCount();
+  combinedTotalSubjects::combinedScienceTotal(finalCount);
+  tripleTotalSubjects::tripleScienceTotal(finalCount);
   optionOne::optionSubjectOne();
   optionTwo::optionSubjectTwo(optionOne);
   optionThree::optionSubjectThree(optionOne, optionTwo);
@@ -692,7 +737,7 @@ int main() {
   threeOption::optionThreeGrade(optionThree);
   fourOption::optionFourGrade(optionFour);
   fiveOption::optionFiveGrade(optionFive);
-  sixOption::optionSixGrade(optionSix);
+ sixOption::optionSixGrade(optionSix);
   averageFiveSubjectsOne::averageFiveSubjectsPartOne(finalCount, finalMathGrade, finalEnglishLanguageGrade, finalEnglishLiteratureGrade, finalScienceGradeOne, finalScienceGradeTwo);
   averageSixSubjectsOne::averageSixSubjectsPartOne(finalCount, finalMathGrade, finalEnglishLanguageGrade, finalEnglishLiteratureGrade, finalScienceGradeOne, finalScienceGradeTwo,
                                                    optionOneGrade);
@@ -708,9 +753,9 @@ int main() {
                                                    optionOneGrade, optionTwoGrade, optionThreeGrade, optionFourGrade, optionFiveGrade, optionSixGrade);
   averageSubjectsTwo::averageSubjectsPartTwo(finalCount, finalMathGrade, finalEnglishLanguageGrade, finalEnglishLiteratureGrade, finalBiologyGrade, finalChemistryGrade,
                                               finalPhysicsGrade, optionOneGrade, optionTwoGrade, optionThreeGrade, optionFourGrade, optionFiveGrade, optionSixGrade);
-  //tier::gradeTier(average);
-  //result::resultStatement(average, finalCount, gradeComment);
-  
+  tier::gradeTier(average);
+  result::resultStatement(average, finalCount, gradeComment);
+*/  
   
   return 0;
 }
