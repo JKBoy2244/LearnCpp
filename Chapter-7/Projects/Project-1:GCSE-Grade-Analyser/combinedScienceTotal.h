@@ -3,7 +3,7 @@
 
 namespace combinedTotalSubjects {
 
-  int combinedScienceTotal();
+  int combinedScienceTotal(int finalCount);
 }
 
 #endif
