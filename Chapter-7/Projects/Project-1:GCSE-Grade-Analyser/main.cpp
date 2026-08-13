@@ -421,6 +421,19 @@ int main() {
   fourOption::optionFourGrade(optionFour);
   fiveOption::optionFiveGrade(optionFive);
   sixOption::optionSixGrade(optionSix);
+  averageFiveSubjectsOne::averageFiveSubjectsPartOne(finalCount, finalMathGrade, finalEnglishLanguageGrade, finalEnglishLiteratureGrade, finalScienceGradeOne, finalScienceGradeTwo);
+  averageSixSubjectsOne::averageSixSubjectsPartOne(finalCount, finalMathGrade, finalEnglishLanguageGrade, finalEnglishLiteratureGrade, finalScienceGradeOne, finalScienceGradeTwo,
+                                                   optionOneGrade);
+  averageSevenSubjectsOne::averageSevenSubjectsPartOne(finalCount, finalMathGrade, finalEnglishLanguageGrade, finalEnglishLiteratureGrade, finalScienceGradeOne, finalScienceGradeTwo,
+                                                   optionOneGrade, optionTwoGrade);
+  averageEightSubjectsOne::averageEightSubjectsPartOne(finalCount, finalMathGrade, finalEnglishLanguageGrade, finalEnglishLiteratureGrade, finalScienceGradeOne, finalScienceGradeTwo,
+                                                   optionOneGrade, optionTwoGrade, optionThreeGrade);
+  averageNineSubjectsOne::averageNineSubjectsPartOne(finalCount, finalMathGrade, finalEnglishLanguageGrade, finalEnglishLiteratureGrade, finalScienceGradeOne, finalScienceGradeTwo,
+                                                   optionOneGrade, optionTwoGrade, optionThreeGrade, optionFourGrade);
+  averageTenSubjectsOne::averageTenSubjectsPartOne(finalCount, finalMathGrade, finalEnglishLanguageGrade, finalEnglishLiteratureGrade, finalScienceGradeOne, finalScienceGradeTwo,
+                                                   optionOneGrade, optionTwoGrade, optionThreeGrade, optionFourGrade, optionFiveGrade);
+  averageTenSubjectsOne::averageTenSubjectsPartOne(finalCount, finalMathGrade, finalEnglishLanguageGrade, finalEnglishLiteratureGrade, finalScienceGradeOne, finalScienceGradeTwo,
+                                                   optionOneGrade, optionTwoGrade, optionThreeGrade, optionFourGrade, optionFiveGrade, optionSixGrade);
   
   
   
