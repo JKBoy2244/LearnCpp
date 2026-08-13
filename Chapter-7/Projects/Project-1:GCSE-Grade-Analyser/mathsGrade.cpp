@@ -9,7 +9,7 @@ namespace mathematics {
   int mathsGrade() {
 
     cout << "Enter your GCSE mathematics grade?\n";
-    int mathGrade {};
+    static int mathGrade {};
     cin >> mathGrade;
     bool validMathGrade {mathGrade >= constants::minGrade && mathGrade <= constants::maxGrade};
     int finalMathGrade {(validMathGrade) ? mathGrade : 0};
