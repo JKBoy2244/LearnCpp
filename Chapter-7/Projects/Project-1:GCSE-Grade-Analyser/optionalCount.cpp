@@ -7,8 +7,8 @@ using namespace std;
 namespace option {
   int optionalCount() {
 
-    cout << "How many option choices are you taking for GCSEs(maximum 6)?\n"
-    const unsigned int optionCount {};
+    cout << "How many option choices are you taking for GCSEs(maximum 6)?\n";
+    unsigned int optionCount {};
     cin >> optionCount;
     bool validCount {optionCount >= constants::minOptionCount && optionCount <= constants::maxOptionCount};
     int finalCount {(optionCount) ? optionCount : 0};
