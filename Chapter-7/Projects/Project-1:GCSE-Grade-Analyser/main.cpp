@@ -521,7 +521,7 @@ int main() {
         string optionOne = optionOne::optionSubjectOne();
         int finalOptionOneGrade = oneOption::optionOneGrade(optionOne);
         double average = averageSixSubjectsOne::averageSixSubjectsPartOne(finalCount, finalMathGrade, finalEnglishLanguageGrade, finalEnglishLiteratureGrade, finalScienceGradeOne, finalScienceGradeTwo,
-                                                   optionOneGrade);
+                                                   finalOptionOneGrade);
         string_view gradeComment = tier::gradeTier(average);
         result::resultStatement(average, gradeComment, finalCount);
      } 
