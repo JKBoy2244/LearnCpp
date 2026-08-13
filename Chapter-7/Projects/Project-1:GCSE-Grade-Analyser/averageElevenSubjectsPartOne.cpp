@@ -9,7 +9,7 @@ namespace averageElevenSubjectsOne {
 
     int totalScore {finalMathGrade + finalEnglishLanguageGrade + finalEnglishLiteratureGrade + finalScienceGradeOne + finalScienceGradeTwo
                    + optionOneGrade + optionTwoGrade + optionThreeGrade + optionFourGrade + optionFiveGrade + optionSixGrade};
-    double averageEleven { static_cast<double>(totalScore) / static_cast<double>(finalCount) };
-    return averageEleven;
+    double average { static_cast<double>(totalScore) / static_cast<double>(finalCount) };
+    return average;
   }
 }
