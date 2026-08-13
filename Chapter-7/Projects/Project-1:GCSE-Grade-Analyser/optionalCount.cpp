@@ -11,7 +11,7 @@ namespace option {
     unsigned int optionCount {};
     cin >> optionCount;
     [[maybe_unused]] bool validCount {optionCount >= constants::minOptionCount && optionCount <= constants::maxOptionCount};
-    int finalCount {static_cast<int>((optionCount) ? optionCount : 0};
+    int finalCount {static_cast<int>((optionCount) ? optionCount : 0)};
     return finalCount;
 
   } 
