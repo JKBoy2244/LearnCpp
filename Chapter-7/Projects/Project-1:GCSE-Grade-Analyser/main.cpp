@@ -15,7 +15,7 @@ using namespace std;
 #include "physicsGrade.h"                 //for physics::physicsGrade
 #include "optionalCount.h"                //for option::optionalCount
 #include "combinedScienceTotal.h"          //for combinedTotalSubjects::combinedScienceTotal
-#include "trpleScienceTotal.h"           //for tripleTotalSubjects::tripleScienceTotal
+#include "tripleScienceTotal.h"           //for tripleTotalSubjects::tripleScienceTotal
 #include "optionSubjectOne.h"              //for optionOne::optionSubjectOne
 #include "optionSubjectTwo.h"               //for optionTwo::optionSubjectTwo
 #include "optionSubjectThree.h"              //for optionThree::optionSubjectThree
