@@ -11,7 +11,7 @@ namespace englishLiterature {
     cout << "Enter your GCSE english literature grade?\n";
     int LiteratureGrade {};
     cin >> LiteratureGrade;
-    bool validLiteratureGrade {LiteratureGrade >= constants::minGrade && mathGrade <= constants::maxGrade};
+    bool validLiteratureGrade {LiteratureGrade >= constants::minGrade && LiteratureGrade <= constants::maxGrade};
     int finalLiteratureGrade {(validLiteratureGrade) ? LiteratureGrade : 0};
     return finalLiteratureGrade;
 
