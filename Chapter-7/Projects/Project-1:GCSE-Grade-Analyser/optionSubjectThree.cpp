@@ -9,7 +9,7 @@ namespace optionThree {
 
     cout << "Enter valid optional subject three which isn't the core subjects maths, english and science and actually exists and when typing, all lower cases please with no single upper case and if your subject "
            "isn't there, write other (all lower case too)?\n";
-    [[maybe_unused]] string optionThree {};
+    [[maybe_unused]] static string optionThree {};
     getline(cin >> ws, optionThree);
     bool validOptionThree {(optionThree == "geography") || (optionThree == "history") || (optionThree == "art") || (optionThree == "french") || (optionThree == "spanish") || (optionThree == "german") 
                        || (optionThree == "italian") || (optionThree == "chinese mandarin") || (optionThree == "religious studies") || (optionThree == "latin") || (optionThree == "computer science")
