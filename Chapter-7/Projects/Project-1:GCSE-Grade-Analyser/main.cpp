@@ -500,9 +500,22 @@ int main() {
   int finalMathGrade = mathematics::mathsGrade();
   int finalEnglishLanguageGrade = englishLanguage::englishLanguageGrade();
   int finalEnglishLiteratureGrade = englishLiterature::englishLiteratureGrade();
-  scienceChoose::chooseScience();
-  firstScienceCombinedGrade::combinedScienceGradeOne();
-  secondScienceCombinedGrade::combinedScienceGradeTwo();
+  string scienceOption = scienceChoose::chooseScience();
+
+  if (scienceOption == "combined") {
+
+     int finalScienceGradeOne = firstScienceCombinedGrade::combinedScienceGradeOne();
+     int finalScienceGradeTwo = secondScienceCombinedGrade::combinedScienceGradeTwo();
+  }
+
+  if (scienceOption == "triple") {
+
+     int biology::biologyGrade();
+    chemistry::chemistryGrade();
+    physics::physicsGrade();
+  }
+  //firstScienceCombinedGrade::combinedScienceGradeOne();
+  //secondScienceCombinedGrade::combinedScienceGradeTwo();
   biology::biologyGrade();
   chemistry::chemistryGrade();
   physics::physicsGrade();
