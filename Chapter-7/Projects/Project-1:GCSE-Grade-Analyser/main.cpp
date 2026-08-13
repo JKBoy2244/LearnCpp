@@ -28,6 +28,13 @@ using namespace std;
 #include "optionFourGrade.h"                  //for fourOption::optionFourGrade
 #include "optionFiveGrade.h"                 //for fiveOption::optionFiveGrade
 #include "optionSixGrade.h"                    //for sixOption::optionSixGrade
+#include "averageFiveSubjectsPartOne.h"
+#include "averageSixSubjectsPartOne.h"
+#include "averageSevenSubjectsPartOne.h"
+#include "averageEightSubjectsPartOne.h"
+#include "averageNineSubjectsPartOne.h"
+#include "averageTenSubjectsPartOne.h"
+#include "averageElevenSubjectsPartOne.h"
 
 int mathsGrade() {
 
