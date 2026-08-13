@@ -8,7 +8,7 @@ namespace averageEightSubjectsOne {
                                    , int optionOneGrade, int optionTwoGrade, int optionThreeGrade) {
 
     int totalScore {finalMathGrade + finalEnglishLanguageGrade + finalEnglishLiteratureGrade + finalScienceGradeOne + finalScienceGradeTwo + optionOneGrade + optionTwoGrade + optionThreeGrade};
-    double averageEight { static_cast<double>(totalScore) / static_cast<double>(finalCount) };
-    return averageEight;
+    double average { static_cast<double>(totalScore) / static_cast<double>(finalCount) };
+    return average;
  }
 }
