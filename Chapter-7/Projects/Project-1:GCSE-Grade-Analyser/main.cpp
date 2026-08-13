@@ -497,9 +497,9 @@ string_view gradeTier(double average) {
 
 int main() {
 
-  mathematics::mathsGrade();
-  englishLanguage::englishLanguageGrade();
-  englishLiterature::englishLiteratureGrade();
+  int finalMathGrade = mathematics::mathsGrade();
+  int finalEnglishLanguageGrade = englishLanguage::englishLanguageGrade();
+  int finalEnglishLiteratureGrade = englishLiterature::englishLiteratureGrade();
   scienceChoose::chooseScience();
   firstScienceCombinedGrade::combinedScienceGradeOne();
   secondScienceCombinedGrade::combinedScienceGradeTwo();
