@@ -11,7 +11,7 @@ namespace firstScienceCombinedGrade {
     [[maybe_unused]] int scienceGradeOne {};
     cin >> scienceGradeOne;
     bool validScienceGradeOne {scienceGradeOne >= constants::minGrade && scienceGradeOne <= constants::maxGrade};
-    int finalScienceGradeOne {(validscienceGradeOne) ? scienceGradeOne : 0};
+    int finalScienceGradeOne {(validScienceGradeOne) ? scienceGradeOne : 0};
     return finalscienceGradeOne;
 
  } 
