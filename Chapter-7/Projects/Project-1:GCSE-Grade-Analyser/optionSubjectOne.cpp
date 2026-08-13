@@ -4,7 +4,7 @@ namespace std;
 
 #include "optionSubjectOne.h"
 
-namespace optOne {
+namespace optionOne {
   string optionSubjectOne() {
 
     cout << "Enter valid optional subject one which isn't the core subjects maths, english and science and actually exists and when typing, all lower cases please with no single upper case and if your subject
