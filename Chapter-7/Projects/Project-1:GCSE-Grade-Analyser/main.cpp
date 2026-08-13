@@ -36,6 +36,7 @@ using namespace std;
 #include "averageTenSubjectsPartOne.h"             //for averageTenSubjectsOne::averageTenSubjectsPartOne()
 #include "averageElevenSubjectsPartOne.h"            //for averageElevenSubjectsOne::averageElevenSubjectsPartOne()
 #include "averageSubjectsPartTwo.h"                   //for averageSubjectsTwo::averageSubjectsPartTwo()
+#include "gradeTier.h"                                //for tier::gradeTier
 
 int mathsGrade() {
 
@@ -526,6 +527,7 @@ int main() {
                                                    optionOneGrade, optionTwoGrade, optionThreeGrade, optionFourGrade, optionFiveGrade, optionSixGrade);
   averageSubjectsTwo::averageSubjectsPartTwo(finalCount, finalMathGrade, finalEnglishLanguageGrade, finalEnglishLiteratureGrade, finalBiologyGrade, finalChemistryGrade,
                                               finalPhysicsGrade, optionOneGrade, optionTwoGrade, optionThreeGrade, optionFourGrade, optionFiveGrade, optionSixGrade);
+  tier::gradeTier(average);
   
   
   return 0;
