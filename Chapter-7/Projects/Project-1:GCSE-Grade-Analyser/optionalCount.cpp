@@ -10,8 +10,8 @@ namespace option {
     cout << "How many option choices are you taking for GCSEs(maximum 6)?\n";
     unsigned int optionCount {};
     cin >> optionCount;
-    bool validCount {optionCount >= constants::minOptionCount && optionCount <= constants::maxOptionCount};
-    int finalCount {(optionCount) ? optionCount : 0};
+    [[maybe_unused]] bool validCount {optionCount >= constants::minOptionCount && optionCount <= constants::maxOptionCount};
+    int finalCount {static_cast<int>((optionCount) ? optionCount : 0};
     return finalCount;
 
   } 
