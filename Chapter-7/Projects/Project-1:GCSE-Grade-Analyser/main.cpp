@@ -618,7 +618,7 @@ int main() {
      if (totalSubjectsTriple == 6) {
  
          double average = averageSubjectsTwo::averageSubjectsPartTwo(finalCount, finalMathGrade, finalEnglishLanguageGrade, finalEnglishLiteratureGrade, finalBiologyGrade, finalChemistryGrade,
-                                              finalPhysicsGrade, 0, 0, 0, 0, 0, 0));
+                                              finalPhysicsGrade, 0, 0, 0, 0, 0, 0);                //the 0s are there as vairables like optionGrades aren't present in this block so hence these are passed as 0
          string_view gradeComment = tier::gradeTier(average);
          result::resultStatement(average, gradeComment, finalCount);
      }
