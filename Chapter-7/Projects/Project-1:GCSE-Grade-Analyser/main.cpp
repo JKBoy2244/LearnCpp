@@ -35,6 +35,7 @@ using namespace std;
 #include "averageNineSubjectsPartOne.h"           //for averageNineSubjectsOne::averageNineSubjectsPartOne()
 #include "averageTenSubjectsPartOne.h"             //for averageTenSubjectsOne::averageTenSubjectsPartOne()
 #include "averageElevenSubjectsPartOne.h"            //for averageElevenSubjectsOne::averageElevenSubjectsPartOne()
+#include "averageSubjectsPartTwo.h"                   //for averageSubjectsTwo::averageSubjectsPartTwo()
 
 int mathsGrade() {
 
