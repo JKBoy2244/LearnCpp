@@ -37,6 +37,7 @@ using namespace std;
 #include "averageElevenSubjectsPartOne.h"            //for averageElevenSubjectsOne::averageElevenSubjectsPartOne()
 #include "averageSubjectsPartTwo.h"                   //for averageSubjectsTwo::averageSubjectsPartTwo()
 #include "gradeTier.h"                                //for tier::gradeTier
+#include "resultStatement.h"                           //for result::resultStatement
 
 int mathsGrade() {
 
@@ -486,6 +487,11 @@ string_view gradeTier(double average) {
   }
 }
 
+void resultStatement(double average, string_view gradeComment, int finalCount) {
+
+  cout << "Your average GCSE grade across your " << finalCount << " GCSEs is: " << average << " which is classified in terms of average: " << gradeComment <<"!\n";
+}
+
 int main() {
 
   mathematics::mathsGrade();
@@ -528,6 +534,7 @@ int main() {
   averageSubjectsTwo::averageSubjectsPartTwo(finalCount, finalMathGrade, finalEnglishLanguageGrade, finalEnglishLiteratureGrade, finalBiologyGrade, finalChemistryGrade,
                                               finalPhysicsGrade, optionOneGrade, optionTwoGrade, optionThreeGrade, optionFourGrade, optionFiveGrade, optionSixGrade);
   tier::gradeTier(average);
+  result::resultStatement(average, finalCount, gradeComment);
   
   
   return 0;
