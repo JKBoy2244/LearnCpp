@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-namespace std;
+using namespace std;
 
 #include "constants.h"
 #include "optionSubjectThree.h" 
