@@ -7,7 +7,7 @@ using namespace std;
 namespace tier {
   string_view gradeTier(double average) {
 
-    if (average == 9.0) {
+    if (average >= 9.0) {
       string_view gradeComment = "Outstanding";
       return gradeComment;
     }
@@ -41,8 +41,5 @@ namespace tier {
       string_view gradeComment = "Poor";
       return gradeComment;
     }
-
-    string_view gradeComment = "Invalid";;
-    return gradeComment;
   }
 }
