@@ -518,7 +518,7 @@ int main() {
 
      if (totalSubjectsCombined == 6) {
 
-        int optionOne = optionOne::optionSubjectOne();
+        string optionOne = optionOne::optionSubjectOne();
         int finalOptionOneGrade = oneOption::optionOneGrade(optionOne);
         double average = averageSixSubjectsOne::averageSixSubjectsPartOne(finalCount, finalMathGrade, finalEnglishLanguageGrade, finalEnglishLiteratureGrade, finalScienceGradeOne, finalScienceGradeTwo,
                                                    optionOneGrade);
@@ -528,9 +528,9 @@ int main() {
 
      if (totalSubjectsCombined == 7) {
 
-        int optionOne = optionOne::optionSubjectOne();
+        string optionOne = optionOne::optionSubjectOne();
         int finalOptionOneGrade = oneOption::optionOneGrade(optionOne);
-        int optionTwo = optionTwo::optionSubjectTwo(optionOne);
+        string optionTwo = optionTwo::optionSubjectTwo(optionOne);
         int finalOptionTwoGrade = twoOption::optionTwoGrade(optionTwo);
         double average = averageSevenSubjectsOne::averageSevenSubjectsPartOne(finalCount, finalMathGrade, finalEnglishLanguageGrade, finalEnglishLiteratureGrade, finalScienceGradeOne, finalScienceGradeTwo,
                                                    finalOptionOneGrade, finalOptionTwoGrade);
@@ -540,11 +540,11 @@ int main() {
 
      if (totalSubjectsCombined == 8) {
 
-        int optionOne = optionOne::optionSubjectOne();
+        string optionOne = optionOne::optionSubjectOne();
         int finalOptionOneGrade = oneOption::optionOneGrade(optionOne);
-        int optionTwo = optionTwo::optionSubjectTwo(optionOne);
+        string optionTwo = optionTwo::optionSubjectTwo(optionOne);
         int finalOptionTwoGrade = twoOption::optionTwoGrade(optionTwo);
-        int optionThree = optionThree::optionSubjectThree(optionOne, optionTwo);
+        string optionThree = optionThree::optionSubjectThree(optionOne, optionTwo);
         int finalOptionThreeGrade = threeOption::optionThreeGrade(optionThree);
         double average = averageEightSubjectsOne::averageEightSubjectsPartOne(finalCount, finalMathGrade, finalEnglishLanguageGrade, finalEnglishLiteratureGrade, finalScienceGradeOne, finalScienceGradeTwo,
                                                    finalOptionOneGrade, finalOptionTwoGrade, finalOptionThreeGrade);
@@ -554,13 +554,13 @@ int main() {
 
      if (totalSubjectsCombined == 9) {
 
-        int optionOne = optionOne::optionSubjectOne();
+        string optionOne = optionOne::optionSubjectOne();
         int finalOptionOneGrade = oneOption::optionOneGrade(optionOne);
-        int optionTwo = optionTwo::optionSubjectTwo(optionOne);
+        string optionTwo = optionTwo::optionSubjectTwo(optionOne);
         int finalOptionTwoGrade = twoOption::optionTwoGrade(optionTwo);
-        int optionThree = optionThree::optionSubjectThree(optionOne, optionTwo);
+        string optionThree = optionThree::optionSubjectThree(optionOne, optionTwo);
         int finalOptionThreeGrade = threeOption::optionThreeGrade(optionThree);
-        int optionFour = optionFour::optionSubjectFour(optionOne, optionTwo, optionThree);
+        string optionFour = optionFour::optionSubjectFour(optionOne, optionTwo, optionThree);
         int finalOptionFourGrade = fourOption::optionFourGrade(optionFour);
         double average = averageNineSubjectsOne::averageNineSubjectsPartOne(finalCount, finalMathGrade, finalEnglishLanguageGrade, finalEnglishLiteratureGrade, finalScienceGradeOne, finalScienceGradeTwo,
                                                    finalOptionOneGrade, finalOptionTwoGrade, finalOptionThreeGrade, finalOptionFourGrade);
@@ -570,15 +570,15 @@ int main() {
 
      if (totalSubjectsCombined == 10) {
 
-        int optionOne = optionOne::optionSubjectOne();
+        string optionOne = optionOne::optionSubjectOne();
         int finalOptionOneGrade = oneOption::optionOneGrade(optionOne);
-        int optionTwo = optionTwo::optionSubjectTwo(optionOne);
+        string optionTwo = optionTwo::optionSubjectTwo(optionOne);
         int finalOptionTwoGrade = twoOption::optionTwoGrade(optionTwo);
-        int optionThree = optionThree::optionSubjectThree(optionOne, optionTwo);
+        string optionThree = optionThree::optionSubjectThree(optionOne, optionTwo);
         int finalOptionThreeGrade = threeOption::optionThreeGrade(optionThree);
-        int optionFour = optionFour::optionSubjectFour(optionOne, optionTwo, optionThree);
+        string optionFour = optionFour::optionSubjectFour(optionOne, optionTwo, optionThree);
         int finalOptionFourGrade = fourOption::optionFourGrade(optionFour);
-        int optionFive = optionFive::optionSubjectFive(optionOne, optionTwo, optionThree, optionFour);
+        string optionFive = optionFive::optionSubjectFive(optionOne, optionTwo, optionThree, optionFour);
         int finalOptionFiveGrade = fiveOption::optionFiveGrade(optionFive);
         double average = averageTenSubjectsOne::averageTenSubjectsPartOne(finalCount, finalMathGrade, finalEnglishLanguageGrade, finalEnglishLiteratureGrade, finalScienceGradeOne, finalScienceGradeTwo,
                                                    finalOptionOneGrade, finalOptionTwoGrade, finalOptionThreeGrade, finalOptionFourGrade, finalOptionFiveGrade);
@@ -588,17 +588,17 @@ int main() {
 
      if (totalSubjectsCombined == 11) {
 
-        int optionOne = optionOne::optionSubjectOne();
+        string optionOne = optionOne::optionSubjectOne();
         int finalOptionOneGrade = oneOption::optionOneGrade(optionOne);
-        int optionTwo = optionTwo::optionSubjectTwo(optionOne);
+        string optionTwo = optionTwo::optionSubjectTwo(optionOne);
         int finalOptionTwoGrade = twoOption::optionTwoGrade(optionTwo);
-        int optionThree = optionThree::optionSubjectThree(optionOne, optionTwo);
+        string optionThree = optionThree::optionSubjectThree(optionOne, optionTwo);
         int finalOptionThreeGrade = threeOption::optionThreeGrade(optionThree);
-        int optionFour = optionFour::optionSubjectFour(optionOne, optionTwo, optionThree);
+        string optionFour = optionFour::optionSubjectFour(optionOne, optionTwo, optionThree);
         int finalOptionFourGrade = fourOption::optionFourGrade(optionFour);
-        int optionFive = optionFive::optionSubjectFive(optionOne, optionTwo, optionThree, optionFour);
+        string optionFive = optionFive::optionSubjectFive(optionOne, optionTwo, optionThree, optionFour);
         int finalOptionFiveGrade = fiveOption::optionFiveGrade(optionFive);
-        int optionSix = optionSix::optionSubjectSix(optionOne, optionTwo, optionThree, optionFour, optionFive);
+        string optionSix = optionSix::optionSubjectSix(optionOne, optionTwo, optionThree, optionFour, optionFive);
         int finalOptionSixGrade = sixOption::optionSixGrade(optionSix);
         double average = averageElevenSubjectsOne::averageElevenSubjectsPartOne(finalCount, finalMathGrade, finalEnglishLanguageGrade, finalEnglishLiteratureGrade, finalScienceGradeOne, finalScienceGradeTwo,
                                                    finalOptionOneGrade, finalOptionTwoGrade, finalOptionThreeGrade, finalOptionFourGrade, finalOptionFiveGrade, finalOptionSixGrade);
@@ -625,7 +625,7 @@ int main() {
 
      if (totalSubjectsTriple == 7) {
 
-         int optionOne = optionOne::optionSubjectOne();
+         string optionOne = optionOne::optionSubjectOne();
          int finalOptionOneGrade = oneOption::optionOneGrade(optionOne);
          double average = averageSubjectsTwo::averageSubjectsPartTwo(finalCount, finalMathGrade, finalEnglishLanguageGrade, finalEnglishLiteratureGrade, finalBiologyGrade, finalChemistryGrade,
                                               finalPhysicsGrade, finalOptionOneGrade, finalOptionTwoGrade, finalOptionThreeGrade, finalOptionFourGrade, finalOptionFiveGrade, finalOptionSixGrade);
@@ -635,9 +635,9 @@ int main() {
 
      if (totalSubjectsTriple == 8) {
 
-         int optionOne = optionOne::optionSubjectOne();
+         string optionOne = optionOne::optionSubjectOne();
          int finalOptionOneGrade = oneOption::optionOneGrade(optionOne);
-         int optionTwo = optionTwo::optionSubjectTwo(optionOne);
+         string optionTwo = optionTwo::optionSubjectTwo(optionOne);
          int finalOptionTwoGrade = twoOption::optionTwoGrade(optionTwo);
          double average = averageSubjectsTwo::averageSubjectsPartTwo(finalCount, finalMathGrade, finalEnglishLanguageGrade, finalEnglishLiteratureGrade, finalBiologyGrade, finalChemistryGrade,
                                               finalPhysicsGrade, finalOptionOneGrade, finalOptionTwoGrade, finalOptionThreeGrade, finalOptionFourGrade, finalOptionFiveGrade, finalOptionSixGrade);
@@ -647,11 +647,11 @@ int main() {
 
      if (totalSubjectsTriple == 9) {
 
-         int optionOne = optionOne::optionSubjectOne();
+         string optionOne = optionOne::optionSubjectOne();
          int finalOptionOneGrade = oneOption::optionOneGrade(optionOne);
-         int optionTwo = optionTwo::optionSubjectTwo(optionOne);
+         string optionTwo = optionTwo::optionSubjectTwo(optionOne);
          int finalOptionTwoGrade = twoOption::optionTwoGrade(optionTwo);
-         int optionThree = optionThree::optionSubjectThree(optionOne, optionTwo);
+         string optionThree = optionThree::optionSubjectThree(optionOne, optionTwo);
          int finalOptionThreeGrade = threeOption::optionThreeGrade(optionThree);
          double average = averageSubjectsTwo::averageSubjectsPartTwo(finalCount, finalMathGrade, finalEnglishLanguageGrade, finalEnglishLiteratureGrade, finalBiologyGrade, finalChemistryGrade,
                                               finalPhysicsGrade, finalOptionOneGrade, finalOptionTwoGrade, finalOptionThreeGrade, finalOptionFourGrade, finalOptionFiveGrade, finalOptionSixGrade);
@@ -661,13 +661,13 @@ int main() {
 
      if (totalSubjectsTriple == 10) {
 
-         int optionOne = optionOne::optionSubjectOne();
+         string optionOne = optionOne::optionSubjectOne();
          int finalOptionOneGrade = oneOption::optionOneGrade(optionOne);
-         int optionTwo = optionTwo::optionSubjectTwo(optionOne);
+         string optionTwo = optionTwo::optionSubjectTwo(optionOne);
          int finalOptionTwoGrade = twoOption::optionTwoGrade(optionTwo);
-         int optionThree = optionThree::optionSubjectThree(optionOne, optionTwo);
+         string optionThree = optionThree::optionSubjectThree(optionOne, optionTwo);
          int finalOptionThreeGrade = threeOption::optionThreeGrade(optionThree);
-         int optionFour = optionFour::optionSubjectFour(optionOne, optionTwo, optionThree);
+         string optionFour = optionFour::optionSubjectFour(optionOne, optionTwo, optionThree);
          int finalOptionFourGrade = fourOption::optionFourGrade(optionFour);
          double average = averageSubjectsTwo::averageSubjectsPartTwo(finalCount, finalMathGrade, finalEnglishLanguageGrade, finalEnglishLiteratureGrade, finalBiologyGrade, finalChemistryGrade,
                                               finalPhysicsGrade, finalOptionOneGrade, finalOptionTwoGrade, finalOptionThreeGrade, finalOptionFourGrade, finalOptionFiveGrade, finalOptionSixGrade);
@@ -678,15 +678,15 @@ int main() {
      if (totalSubjectsTriple == 11) {
 
          
-         int optionOne = optionOne::optionSubjectOne();
+         string optionOne = optionOne::optionSubjectOne();
          int finalOptionOneGrade = oneOption::optionOneGrade(optionOne);
-         int optionTwo = optionTwo::optionSubjectTwo(optionOne);
+         string optionTwo = optionTwo::optionSubjectTwo(optionOne);
          int finalOptionTwoGrade = twoOption::optionTwoGrade(optionTwo);
-         int optionThree = optionThree::optionSubjectThree(optionOne, optionTwo);
+         string optionThree = optionThree::optionSubjectThree(optionOne, optionTwo);
          int finalOptionThreeGrade = threeOption::optionThreeGrade(optionThree);
-         int optionFour = optionFour::optionSubjectFour(optionOne, optionTwo, optionThree);
+         string optionFour = optionFour::optionSubjectFour(optionOne, optionTwo, optionThree);
          int finalOptionFourGrade = fourOption::optionFourGrade(optionFour);
-         int optionFive = optionFive::optionSubjectFive(optionOne, optionTwo, optionThree, optionFour);
+         string optionFive = optionFive::optionSubjectFive(optionOne, optionTwo, optionThree, optionFour);
          int finalOptionFiveGrade = fiveOption::optionFiveGrade(optionFive);
          double average = averageSubjectsTwo::averageSubjectsPartTwo(finalCount, finalMathGrade, finalEnglishLanguageGrade, finalEnglishLiteratureGrade, finalBiologyGrade, finalChemistryGrade,
                                               finalPhysicsGrade, finalOptionOneGrade, finalOptionTwoGrade, finalOptionThreeGrade, finalOptionFourGrade, finalOptionFiveGrade, finalOptionSixGrade);
@@ -696,17 +696,17 @@ int main() {
 
      if (totalSubjectsTriple == 12) {
       
-         int optionOne = optionOne::optionSubjectOne();
+         string optionOne = optionOne::optionSubjectOne();
          int finalOptionOneGrade = oneOption::optionOneGrade(optionOne);
-         int optionTwo = optionTwo::optionSubjectTwo(optionOne);
+         string optionTwo = optionTwo::optionSubjectTwo(optionOne);
          int finalOptionTwoGrade = twoOption::optionTwoGrade(optionTwo);
-         int optionThree = optionThree::optionSubjectThree(optionOne, optionTwo);
+         string optionThree = optionThree::optionSubjectThree(optionOne, optionTwo);
          int finalOptionThreeGrade = threeOption::optionThreeGrade(optionThree);
-         int optionFour = optionFour::optionSubjectFour(optionOne, optionTwo, optionThree);
+         string optionFour = optionFour::optionSubjectFour(optionOne, optionTwo, optionThree);
          int finalOptionFourGrade = fourOption::optionFourGrade(optionFour);
-         int optionFive = optionFive::optionSubjectFive(optionOne, optionTwo, optionThree, optionFour);
+         string optionFive = optionFive::optionSubjectFive(optionOne, optionTwo, optionThree, optionFour);
          int finalOptionFiveGrade = fiveOption::optionFiveGrade(optionFive);
-         int optionSix = optionSix::optionSubjectSix(optionOne, optionTwo, optionThree, optionFour, optionFive);
+         string optionSix = optionSix::optionSubjectSix(optionOne, optionTwo, optionThree, optionFour, optionFive);
          int finalOptionSixGrade = sixOption::optionSixGrade(optionSix);
          double average = averageSubjectsTwo::averageSubjectsPartTwo(finalCount, finalMathGrade, finalEnglishLanguageGrade, finalEnglishLiteratureGrade, finalBiologyGrade, finalChemistryGrade,
                                               finalPhysicsGrade, finalOptionOneGrade, finalOptionTwoGrade, finalOptionThreeGrade, finalOptionFourGrade, finalOptionFiveGrade, finalOptionSixGrade);
