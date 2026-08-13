@@ -2,7 +2,7 @@
 using namespace std;
 
 #include "constants.h"                     //for constants::minGrade and constants::maxGrade
-#include "englishLangauageGrade.h"         //for englishLanguage::englishLanguageGrade
+#include "englishLanguageGrade.h"         //for englishLanguage::englishLanguageGrade
 
 namespace englishLanguage {
   int englishLanguageGrade() {
