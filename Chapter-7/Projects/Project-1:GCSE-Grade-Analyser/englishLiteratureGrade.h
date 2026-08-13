@@ -3,7 +3,7 @@
 
 namespace englishLiterature {
 
-  int englishLiteratureGrade() 
+  int englishLiteratureGrade();
 }
 
 #endif
