@@ -13,7 +13,7 @@ namespace scienceChoose {
     if (scienceOption == "triple" || scienceOption == "combined") {
       return scienceOption;
     } else {
-      return 0;
+      return " ";
     }
   }
 }
