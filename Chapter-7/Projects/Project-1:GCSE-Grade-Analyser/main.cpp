@@ -39,7 +39,8 @@ using namespace std;
 #include "gradeTier.h"                                //for tier::gradeTier
 #include "resultStatement.h"                           //for result::resultStatement
 
-int mathsGrade() {
+/*
+ int mathsGrade() {
 
   cout << "Enter your GCSE mathematics grade?\n"; 
   int mathGrade {};
@@ -487,10 +488,12 @@ string_view gradeTier(double average) {
   }
 }
 
-void resultStatement(double average, string_view gradeComment, int finalCount) {
+ void resultStatement(double average, string_view gradeComment, int finalCount) {
 
-  cout << "Your average GCSE grade across your " << finalCount << " GCSEs is: " << average << " which is classified in terms of average: " << gradeComment <<"!\n";
-}
+   cout << "Your average GCSE grade across your " << finalCount << " GCSEs is: " << average << " which is classified in terms of average: " << gradeComment <<"!\n";
+ }
+
+*/
 
 int main() {
 
