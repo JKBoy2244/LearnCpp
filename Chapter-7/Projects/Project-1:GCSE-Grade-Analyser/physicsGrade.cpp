@@ -8,7 +8,7 @@ namespace physics {
   int physicsGrade() {
 
     cout << "Enter your GCSE physics grade?\n"; 
-    [[maybe_unused]] int physicsGrade {};
+    [[maybe_unused]] static int physicsGrade {};
     cin >> physicsGrade;
     bool validPhysicsGrade {physicsGrade >= constants::minGrade && physicsGrade <= constants::maxGrade};
     int finalPhysicsGrade {(validPhysicsGrade) ? physicsGrade : 0};
