@@ -6,7 +6,7 @@ using namespace std;
 namespace tripleTotalSubjects {
   int tripleScienceTotal(int finalCount) {
 
-    [[maybe_unused]] int totalSubjectsTriple {5 + finalCount};
+    [[maybe_unused]] static int totalSubjectsTriple {5 + finalCount};
     return totalSubjectsTriple;
 
   }
