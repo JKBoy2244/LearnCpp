@@ -53,5 +53,8 @@ namespace averageSubjectsTwo {
        double average { static_cast<double>(totalScore) / static_cast<double>(finalCount) };
        return average;
     }
+
+    double average {0.0};
+    return average;
   }
 }
