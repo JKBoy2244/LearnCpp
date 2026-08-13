@@ -607,7 +607,7 @@ int main() {
      }   
   }
 
-  if (scienceOption == "triple") {
+  else if (scienceOption == "triple") {
 
      int finalBiologyGrade = biology::biologyGrade();
      int finalChemistryGrade = chemistry::chemistryGrade();
@@ -713,10 +713,10 @@ int main() {
          string_view gradeComment = tier::gradeTier(average);
          result::resultStatement(average, gradeComment, totalSubjectsTriple);
      }
-   }
+   } else {
 
-   cout << "Sorry, your input is invalid unfortunately so the program will have to halt here I'm afraid!\n";
-
+      cout << "Sorry, your input is invalid unfortunately so the program will have to halt here I'm afraid!\n";
+  }
 /*
   firstScienceCombinedGrade::combinedScienceGradeOne();
   secondScienceCombinedGrade::combinedScienceGradeTwo();
