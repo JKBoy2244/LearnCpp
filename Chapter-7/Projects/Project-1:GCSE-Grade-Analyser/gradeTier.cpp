@@ -41,5 +41,8 @@ namespace tier {
       string_view gradeComment = "Poor";
       return gradeComment;
     }
+
+    string_view gradeComment = "Invalid";;
+    return gradeComment;
   }
 }
