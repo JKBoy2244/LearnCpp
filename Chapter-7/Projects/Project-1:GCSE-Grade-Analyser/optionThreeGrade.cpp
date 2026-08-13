@@ -9,7 +9,7 @@ namespace threeOption {
   int optionThreeGrade(string optionThree) {
 
     cout << "Enter your GCSE " << optionThree << " grade?\n"; 
-    [[maybe_unused]] int optThreeGrade {};
+    [[maybe_unused]] static int optThreeGrade {};
     cin >> optThreeGrade;
     bool validOptThreeGrade {optThreeGrade >= constants::minGrade && optThreeGrade <= constants::maxGrade};
     int finalOptThreeGrade {(validOptThreeGrade) ? optThreeGrade : 0};
