@@ -2,7 +2,7 @@
 #define FINALRESULT
 #include <string_view>
 
-namespace Result {
+inline namespace Result {
 
   void finalResult(int points, std::string_view medal);
 }
