@@ -2,6 +2,7 @@
 #include <random>
 using namespace std;
 
+#include "constants.h"
 #include "readyMenu.h"
 
 /*
