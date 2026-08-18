@@ -264,8 +264,6 @@ int main() {
        
        if ( (!correct) && (!attemptsComplete) ) {
 
-         
-         Hint::hintStatement(attemptsRemaining, programNumber);
          points -= 40;
          int attemptsRemaining = Attempts::attemptsLeft(constants::maxChances, attempts);
 
