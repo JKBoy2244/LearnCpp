@@ -248,6 +248,7 @@ int main() {
        Retry:
        int number = Guess::GuessNumber(randomNumber);
        attempts++;
+       
        bool correct {number == randomNumber};
        bool attemptsComplete {attempts == constants::maxChances};
        
@@ -290,6 +291,9 @@ int main() {
 
      string_view award = Award::awardsClassification(points);
      Result::finalResult(points, award);
+
+     
+     
     
   }
 
