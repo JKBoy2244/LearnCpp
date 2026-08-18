@@ -7,6 +7,7 @@ using namespace std;
 #include "readyMenu.h"
 #include "randomNumber.h"
 #include "attemptsLeft.h"
+#include "digitsCorrect.h"
 
 int attempts;
 
@@ -45,6 +46,44 @@ int attemptsLeft(constants::maxChances, int attempts) {
    int attemptsRemaining = constants::maxChances - attempts;
    return attemptsRemaining;
 }
+
+void digitsCorrect(int number, int randomNumber) {
+
+  cout << "=============================================\n";
+  if ( (number / 1000) == (randomNumber / 1000) ) {
+
+     cout << "First digit of your guess is correct!\n";
+  } else {
+
+     cout << "First digit of your guess is incorrect!\n";
+  }
+
+  if ( ( (number / 100) % 10 ) == ( (randomNumber / 100) % 10 ) ) {
+
+     cout << "Second digit of your guess is correct!\n";
+  } else {
+
+     cout << "Second digit of your guess is incorrect!\n";
+  }
+
+  if ( ( (number / 10) % 10 ) == ( (randomNumber / 10) % 10 ) ) {
+
+     cout << "Third digit of your guess is correct!\n";
+  } else {
+
+     cout << "Third digit of your guess is incorrect!\n";
+  }
+
+  if ( ( (number / 1) % 10 ) == ( (randomNumber / 1) % 10 ) ) {
+
+     cout << "Fourth digit of your guess is correct!\n";
+  } else {
+
+     cout << "Fourth digit of your guess is incorrect!\n";
+  }
+
+}
+
 
 
 */
@@ -100,7 +139,9 @@ int main() {
        if ( (!correct) && (!attemptsComplete) ) {
 
          int attemptsRemaining = Attempts::attemptsLeft(constants::maxChances, attempts);
-         cout << "You have " << attemptsRemaining << " attempts left!";
+         Digits::digitsCorrect(number, randomNumber);
+         cout << "Sorry, your number isn't what I am thinking off!\n";
+         cout << "You have " << attemptsRemaining << " attempts left!\n";
          goto Retry;
        }
 
