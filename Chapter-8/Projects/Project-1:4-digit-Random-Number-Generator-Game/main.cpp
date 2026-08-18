@@ -281,6 +281,7 @@ int main() {
 
        else if ( (!correct) && (attemptsComplete) ) {
 
+         points -= 40;
          cout << "Sorry, all you attempts have been used up!\n";
          cout << "The number I was exactly thinking off was " << programNumber << " !\n";
          break;
