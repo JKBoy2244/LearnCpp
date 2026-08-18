@@ -25,7 +25,7 @@ namespace Award {
       return medal;
     }
 
-    else if (points >= 180 && points < 480) {
+    else if (points >= 300 && points < 480) {
 
       string_view medal = "bronze";
       return medal;
