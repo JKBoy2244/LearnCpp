@@ -27,7 +27,7 @@ int main() {
     tryAgain:
     char ready = Menu::readyMenu();
     bool validReady {ready == 'y' || ready == 'n'};
-    bool notEmpty {cin >> ready};
+    bool notEmpty {cin};
     menuAttempts++;
     bool attemptsFinished {menuAttempts == constants::maxMenuChances};
     
