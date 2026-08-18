@@ -22,14 +22,14 @@ char readyMenu() {
 
 int main() {
 
-  int menuAttempts {0};
-  while (menuAttempts < constants::maxMenuChances) {             
+  static int menuAttempts {0};
+  while (menuAttempts < constants::maxMenuChances) {         //The user has 3 chances to enter a valid yes or no to prevent the program from running forever. Entire program should run promptly, not forever!    
 
     tryAgain:
     string ready = Menu::readyMenu();
-    bool validReady {ready == "yes" || ready == "no"};
+    bool validReady {ready == "yes" || ready == "no"};                                 //Lines 30 and 31 deal with invalid inputs
     bool notEmpty {cin};
-    menuAttempts++;
+    menuAttempts++;                                                                    //If the user enters the valid input within first try, it counts as one attempt!
     bool attemptsFinished {menuAttempts == constants::maxMenuChances};
     
     if ( ((!validReady) || (!notEmpty)) && (!attemptsFinished) ) {
@@ -55,6 +55,12 @@ int main() {
       break;
     }
   }
+
+  while (true) {
+
+    
+  }
+
   
   return 0;
 }
