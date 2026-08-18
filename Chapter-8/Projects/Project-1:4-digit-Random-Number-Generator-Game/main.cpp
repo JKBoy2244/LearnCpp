@@ -34,7 +34,7 @@ int main() {
     
     if ( ((!validReady) || (!notEmpty)) && (!attemptsFinished) ) {
 
-      cout << "Sorry, that's invalid input so please try again, you have " << constants::maxMenuChances - menuAttempts << " left!\n";
+      cout << "Sorry, that's invalid input so please try again, you have " << constants::maxMenuChances - menuAttempts << " left!\n";     //Continues until user uses all attempts if invalid input
       goto tryAgain;
     }
 
@@ -46,13 +46,13 @@ int main() {
 
     else if (ready == "no") {
 
-      cout << "Sorry you had to go, come back later when you're ready!\n";
+      cout << "Sorry you had to go, come back later when you're ready!\n";              //Program stops if user types no
       exit(0);
     }
 
     else {
 
-      break;
+      break;              //typing yes forces the program out of the while loop
     }
   }
 
