@@ -11,8 +11,8 @@ namespace Menu {
     cout << "You start with 1000 points but every time you get a guess wrong which is extremely likely at least, you lose 40 points each time\n";
     cout << "But, don't worry because this is meant to be a deliberately challenging game which is the point\n";
     cout << "Are you ready to play though (please type 'yes' or 'no' and all lowercase specific)\n";
-    char ready {};
-    string >> ready;
+    string ready {};
+    cin >> ready;
     return ready;
   }
 }
