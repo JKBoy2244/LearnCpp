@@ -8,9 +8,12 @@ using namespace std;
 #include "randomNumber.h"
 #include "attemptsLeft.h"
 #include "digitsCorrect.h"
-#include "hintStatement.h"           
+#include "hintStatement.h" 
+#include "awardsClassiciation.h"
+#include "finalResult.h"
 
 int attempts;
+int points;
 
 /*
 char readyMenu() {
@@ -156,6 +159,44 @@ void hintStatement(int attemptsRemaining, int randomNumber) {
   }
 }
 
+string_view awardsClassification(int points) {
+
+  if (points >= 880) {
+
+     string_view medal = "platinum";
+     return medal;
+  }
+
+  else if (points >= 680 && points < 880) {
+
+    string_view medal = "gold";
+    return medal;
+  }
+
+  else if (points >= 480 && points < 680) {
+
+    string_view medal = "silver";
+    return medal;
+  }
+
+  else if (points >= 180 && points < 480) {
+
+    string_view medal = "bronze";
+    return medal;
+  }
+
+  else {
+
+    string_view medal = "participation";
+    return medal;
+  }
+}
+
+void finalResult(int points, string_view medal) {
+
+  cout << "You scored " << points << " this round so hence you receive the " << medal << " award!\n";
+  cout << "Boundaries: 880 points = platinum, 680 points = gold, 480 points = silver, 180 points = bronze and < 180 = participation!\n";
+}
 
 */
 
@@ -245,7 +286,8 @@ int main() {
      }
      while (attempts < constants::maxChances);
 
-
+     string_view award = Award::awardsClassification(points);
+     Result::finalResult(points, award);
     
   }
 
