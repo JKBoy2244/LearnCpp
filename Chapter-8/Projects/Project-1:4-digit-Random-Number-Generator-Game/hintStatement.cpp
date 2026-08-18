@@ -20,7 +20,7 @@ namespace Hint {
         }
 
      case 12: 
-        if ((randomNumber / 1000)  % 2 != 0) {                     (randomNumber / 1000)     
+        if ((randomNumber / 1000)  % 2 != 0) {                         
            print("The first digit I am thinking off is odd");
            break;
         } else {
