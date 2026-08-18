@@ -19,7 +19,7 @@ namespace Hint {
           break;
         }
 
-    case 12: 
+     case 12: 
         if ((randomNumber / 1000)  % 2 != 0) {                     (randomNumber / 1000)     
            print("The first digit I am thinking off is odd");
            break;
@@ -29,7 +29,7 @@ namespace Hint {
           break;
         }
 
-   case 8:
+     case 8:
         if (((randomNumber / 100) % 10)  % 2 != 0) {
            print("The second digit I am thinking off is odd");
            break;
@@ -38,8 +38,8 @@ namespace Hint {
           print("The second digit I am thinking off is even");
           break;
         }
-
-  case 4:
+ 
+     case 4:
         if (((randomNumber / 10) % 10) % 2 != 0) {
            print("The third digit I am thinking off is odd");
            break;
