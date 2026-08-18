@@ -6,6 +6,9 @@ using namespace std;
 #include "constants.h"
 #include "readyMenu.h"
 #include "randomNumber.h"
+#include "attemptsLeft.h"
+
+int attempts;
 
 /*
 char readyMenu() {
@@ -28,6 +31,22 @@ int randomNumber() {
    return programNumber;
 }
 
+int guessNumber(int programNumber) {
+
+   cout << "Your 20 chances start now!\n";
+   cout << "Guess the number I am thinking of\n";
+   int number {};
+   cin >> number;
+   return number;
+}
+
+int attemptsLeft(constants::maxChances, int attempts) {
+
+   int attemptsRemaining = constants::maxChances - attempts;
+   return attemptsRemaining;
+}
+
+
 */
 
 int main() {
@@ -35,7 +54,7 @@ int main() {
   static int menuAttempts {0};
   while (menuAttempts < constants::maxMenuChances) {         //The user has 3 chances to enter a valid yes or no to prevent the program from running forever. Entire program should run promptly, not forever!    
 
-    tryAgain:
+    tryAgain:                                                         //Statement point if any invalid input and not all 3 attempts used up
     string ready = Menu::readyMenu();
     bool validReady {ready == "yes" || ready == "no"};                                 //Lines 30 and 31 deal with invalid inputs
     bool notEmpty {cin};
@@ -69,6 +88,27 @@ int main() {
   while (true) {
 
      int programNumber = Generate::randomNumber();
+     int attempts {0};
+
+     do {
+       Retry:
+       int number = Guess::GuessNumber(randomNumber);
+       attempts++;
+       bool correct {number == randomNumber};
+       bool attemptsComplete {attempts == constants::maxChances};
+       
+       if ( (!correct) && (!attemptsComplete) ) {
+
+         int attemptsRemaining = Attempts::attemptsLeft(constants::maxChances, attempts);
+         cout << "You have " << attemptsRemaining << " attempts left!";
+         goto Retry;
+       }
+
+       
+
+     }
+     while (attempts < constants::maxChances);
+     
   }
 
   
