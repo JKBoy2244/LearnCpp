@@ -333,7 +333,7 @@ int main() {
 
       else {
 
-        continue;              //typing yes takes the program to the start of the while true loop
+        break;              //typing yes takes the program to the start of the while true loop
       }
     }
      
