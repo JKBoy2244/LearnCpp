@@ -256,27 +256,27 @@ int main() {
 
      do {
        Retry:
-       int number = Guess::GuessNumber(randomNumber);
+       int number = Guess::GuessNumber(programNumber);
        attempts++;
        
-       bool correct {number == randomNumber};
+       bool correct {number == programNumber};
        bool attemptsComplete {attempts == constants::maxChances};
        
        if ( (!correct) && (!attemptsComplete) ) {
 
          
-         Hint::hintStatement(attemptsRemaining, randomNumber)
+         Hint::hintStatement(attemptsRemaining, programNumber)
          points -= 40;
          int attemptsRemaining = Attempts::attemptsLeft(constants::maxChances, attempts);
 
          if ( (attemptsRemaining == 16) || (attemptsRemaining == 12) || (attemptsRemaining == 8) || (attemptsRemaining == 4) ) {
 
-           Hint::hintStatement(attemptsRemaining, randomNumber);
+           Hint::hintStatement(attemptsRemaining, programNumber);
          }
          
-         Digits::digitsCorrect(number, randomNumber);
+         Digits::digitsCorrect(number, programNumber);
          cout << "Sorry, your number isn't what I am thinking off!\n";
-         Proximity::valueProximity(number, randomNumber);
+         Proximity::valueProximity(number, programNumber);
          cout << "You have " << attemptsRemaining << " attempts left!\n";
          goto Retry;
        }
@@ -284,7 +284,7 @@ int main() {
        else if ( (!correct) && (attemptsComplete) ) {
 
          cout << "Sorry, all you attempts have been used up!\n";
-         cout << "The number I was exactly thinking off was " << randomNumber << " !\n";
+         cout << "The number I was exactly thinking off was " << programNumber << " !\n";
          break;
          
        }
@@ -292,7 +292,7 @@ int main() {
        else {
 
          cout << "Yes, congratulations, that number was exactly what I was thinking of!\n";
-         cout << "The number I was exactly thinking off was " << randomNumber << " !\n";
+         cout << "The number I was exactly thinking off was " << programNumber << " !\n";
          break;
        }
 
