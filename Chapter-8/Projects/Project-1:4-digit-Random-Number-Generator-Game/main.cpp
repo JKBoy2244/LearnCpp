@@ -27,16 +27,17 @@ int main() {
     tryAgain:
     char ready = Menu::readyMenu();
     bool validReady {ready == 'y' || ready == 'n'};
+    bool notEmpty {cin >> ready};
     menuAttempts++;
     bool attemptsFinished {menuAttempts == constants::maxMenuChances};
     
-    if ((!validReady) && (!attemptsFinished)) {
+    if ( ((!validReady) || (!notEmpty)) && (!attemptsFinished) ) {
 
       cout << "Sorry, that's invalid input so please try again, you have " << constants::maxMenuChances - menuAttempts << " left!\n";
       goto tryAgain;
     }
 
-    else if ((!validReady) && (attemptsFinished)) {
+    else if ( ((!validReady) || (!notEmpty)) && (attemptsFinished) ) {
 
       cout << "Sorry, you used all your attempts to enter a valid input, come back later when you're ready to type something valid!\n";
       exit(0);
