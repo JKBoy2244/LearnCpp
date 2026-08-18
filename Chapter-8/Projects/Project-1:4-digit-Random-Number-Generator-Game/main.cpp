@@ -44,7 +44,7 @@ int main() {
       exit(0);
     }
 
-    else if (ready == 'n') {
+    else if (ready == "no") {
 
       cout << "Sorry you had to go, come back later when you're ready!\n";
       exit(0);
