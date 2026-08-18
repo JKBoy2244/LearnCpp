@@ -14,6 +14,7 @@ using namespace std;
 #include "finalResult.h"
 #include "guessNumber.h"
 #include "playAgain.h"
+#include "valueProximity.h"
 
 int attempts;
 int points;
