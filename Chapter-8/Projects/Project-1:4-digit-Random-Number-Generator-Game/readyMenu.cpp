@@ -12,7 +12,7 @@ namespace Menu {
     cout << "But, don't worry because this is meant to be a deliberately challenging game which is the point\n";
     cout << "Are you ready to play though (please type 'yes' or 'no' and all lowercase specific)\n";
     string ready {};
-    cin >> ready;
+    getline(cin, ready);
     return ready;
   }
 }
