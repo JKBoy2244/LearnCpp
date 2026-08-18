@@ -11,41 +11,41 @@ namespace Hint {
 
      case 16:
         if (randomNumber % 2 != 0) {
-           print("The number I am thinking off is odd");
+           cout << "The number I am thinking off is odd\n";
            break;
         } else {
 
-          print("The number I am thinking off is even");
+          cout << "The number I am thinking off is even\n";
           break;
         }
 
      case 12: 
         if ((randomNumber / 1000)  % 2 != 0) {                         
-           print("The first digit I am thinking off is odd");
+           cout << "The first digit I am thinking off is odd\n";
            break;
         } else {
 
-          print("The first digit I am thinking off is even");
+          cout << "The first digit I am thinking off is even\n";
           break;
         }
 
      case 8:
         if (((randomNumber / 100) % 10)  % 2 != 0) {
-           print("The second digit I am thinking off is odd");
+           cout << "The second digit I am thinking off is odd\n";
            break;
         } else {
 
-          print("The second digit I am thinking off is even");
+          cout << "The first digit I am thinking off is even\n";
           break;
         }
  
      case 4:
         if (((randomNumber / 10) % 10) % 2 != 0) {
-           print("The third digit I am thinking off is odd");
+           cout << "The third digit I am thinking off is odd\n";
            break;
         } else {
 
-          print("The third digit I am thinking off is even");
+          cout << "The first digit I am thinking off is even\n";
           break;
         }
 
