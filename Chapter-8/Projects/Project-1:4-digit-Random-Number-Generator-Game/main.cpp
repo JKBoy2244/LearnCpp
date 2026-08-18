@@ -5,6 +5,7 @@ using namespace std;
 
 #include "constants.h"
 #include "readyMenu.h"
+#include "randomNumber.h"
 
 /*
 char readyMenu() {
@@ -18,6 +19,15 @@ char readyMenu() {
   return ready;
     
 }
+
+int randomNumber() {
+
+   mt19937 number {rd()};
+   uniform_int_distribution range{constants::minNumber, constants::maxNumber};
+   int programNumber = range(number);
+   return programNumber;
+}
+
 */
 
 int main() {
@@ -58,7 +68,7 @@ int main() {
 
   while (true) {
 
-    
+     int programNumber = Generate::randomNumber();
   }
 
   
