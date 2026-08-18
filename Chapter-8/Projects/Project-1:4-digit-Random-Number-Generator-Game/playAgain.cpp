@@ -9,7 +9,7 @@ namespace Replay {
 
     cout << "Do you want to play again or quit(yes = play again, no = quit) and please please type only yes or no all lowercase?\n";
     string play {};
-    cin >> play;
+    getline(cin, play);
     return play;
   }
 }
