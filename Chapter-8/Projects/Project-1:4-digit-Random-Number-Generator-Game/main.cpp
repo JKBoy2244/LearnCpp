@@ -227,11 +227,26 @@ int main() {
          goto Retry;
        }
 
-       
+       else if ( (!correct) && (attemptsComplete) ) {
+
+         cout << "Sorry, all you attempts have been used up!\n";
+         cout << "The number I was exactly thinking off was " << randomNumber << " !\n";
+         break;
+         
+       }
+
+       else {
+
+         cout << "Yes, congratulations, that number was exactly what I was thinking of!\n";
+         cout << "The number I was exactly thinking off was " << randomNumber << " !\n";
+         break;
+       }
 
      }
      while (attempts < constants::maxChances);
-     
+
+
+    
   }
 
   
