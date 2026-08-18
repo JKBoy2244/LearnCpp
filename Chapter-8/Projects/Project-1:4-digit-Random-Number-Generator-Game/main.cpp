@@ -13,6 +13,7 @@ using namespace std;
 #include "awardsClassiciation.h"
 #include "finalResult.h"
 #include "guessNumber.h"
+#include "playAgain.h"
 
 int attempts;
 int points;
@@ -200,6 +201,14 @@ void finalResult(int points, string_view medal) {
   cout << "Boundaries: 880 points = platinum, 680 points = gold, 480 points = silver, 180 points = bronze and < 180 = participation!\n";
 }
 
+string playAgain() {
+
+  cout << "Do you want to play again or quit(yes = play again, no = quit) and please please type only yes or no all lowercase?\n";
+  string play {};
+  cin >> play;
+  return play;
+}
+
 */
 
 int main() {
@@ -291,7 +300,7 @@ int main() {
 
      string_view award = Award::awardsClassification(points);
      Result::finalResult(points, award);
-
+     string play = Replay::playAgain();
      
      
     
