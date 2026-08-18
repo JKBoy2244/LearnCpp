@@ -35,7 +35,7 @@ namespace Hint {
            break;
         } else {
 
-          cout << "The first digit I am thinking off is even\n";
+          cout << "The second digit I am thinking off is even\n";
           break;
         }
  
@@ -45,7 +45,7 @@ namespace Hint {
            break;
         } else {
 
-          cout << "The first digit I am thinking off is even\n";
+          cout << "The third digit I am thinking off is even\n";
           break;
         }
 
