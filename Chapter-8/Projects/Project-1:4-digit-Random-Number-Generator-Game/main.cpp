@@ -1,6 +1,7 @@
 #include <iostream>
 #include <random>
 #include <string>
+#include <string_view>
 using namespace std;
 
 #include "constants.h"
@@ -11,6 +12,7 @@ using namespace std;
 #include "hintStatement.h" 
 #include "awardsClassiciation.h"
 #include "finalResult.h"
+#include "guessNumber.h"
 
 int attempts;
 int points;
