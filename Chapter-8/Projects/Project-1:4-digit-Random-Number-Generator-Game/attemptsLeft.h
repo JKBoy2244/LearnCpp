@@ -3,7 +3,7 @@
 
 namespace Attempts {
 
-  int attemptsLeft(constants::maxChances, int attempts);
+  int attemptsLeft(int maxChances, int attempts);
 }
 
 #endif
