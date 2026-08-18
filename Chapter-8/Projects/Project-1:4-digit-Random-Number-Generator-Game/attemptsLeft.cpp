@@ -7,7 +7,7 @@ using namespace std;
 namespace Attempts{
   int attemptsLeft(int maxChances, int attempts) {
 
-   int attemptsRemaining = constants::maxChances - attempts;
+   int attemptsRemaining = maxChances - attempts;
    return attemptsRemaining;
  }
 }
