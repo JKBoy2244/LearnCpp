@@ -1,5 +1,6 @@
 #include <iostream>
 #include <random>
+#include <string>
 using namespace std;
 
 #include "constants.h"
@@ -22,11 +23,11 @@ char readyMenu() {
 int main() {
 
   int menuAttempts {0};
-  while (menuAttempts < constants::maxMenuChances) {             //one mistake
+  while (menuAttempts < constants::maxMenuChances) {             
 
     tryAgain:
-    char ready = Menu::readyMenu();
-    bool validReady {ready == 'y' || ready == 'n'};
+    string ready = Menu::readyMenu();
+    bool validReady {ready == 'yes' || ready == 'no'};
     bool notEmpty {cin};
     menuAttempts++;
     bool attemptsFinished {menuAttempts == constants::maxMenuChances};
