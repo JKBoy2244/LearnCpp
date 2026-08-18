@@ -308,7 +308,7 @@ int main() {
 
        replayTry:
        string play = Replay::playAgain();
-       bool replayReady {ready == "yes" || ready == "no"};
+       bool replayReady {play == "yes" || play == "no"};
        bool notReplayEmpty {cin};
        replayAttempts++;
        bool replayFinished {replayAttempts == constants::maxMenuChances};
