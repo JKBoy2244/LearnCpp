@@ -8,6 +8,7 @@ using namespace std;
 #include "randomNumber.h"
 #include "attemptsLeft.h"
 #include "digitsCorrect.h"
+#include "hintStatement.h"           
 
 int attempts;
 
@@ -107,6 +108,54 @@ void valueProximity(int number, int randomNumber) {
   }
 }
 
+void hintStatement(int attemptsRemaining, int randomNumber) {
+
+  switch (attemptsRemaining) {
+
+     case 16:
+        if (randomNumber % 2 != 0) {
+           print("The number I am thinking off is odd");
+           break;
+        } else {
+
+          print("The number I am thinking off is even");
+          break;
+        }
+
+    case 12: 
+        if ((randomNumber / 1000)  % 2 != 0) {                     (randomNumber / 1000)     
+           print("The first digit I am thinking off is odd");
+           break;
+        } else {
+
+          print("The first digit I am thinking off is even");
+          break;
+        }
+
+   case 8:
+        if (((randomNumber / 100) % 10)  % 2 != 0) {
+           print("The second digit I am thinking off is odd");
+           break;
+        } else {
+
+          print("The second digit I am thinking off is even");
+          break;
+        }
+
+  case 4:
+        if (((randomNumber / 10) % 10) % 2 != 0) {
+           print("The third digit I am thinking off is odd");
+           break;
+        } else {
+
+          print("The third digit I am thinking off is even");
+          break;
+        }
+
+      
+  }
+}
+
 
 */
 
@@ -150,6 +199,7 @@ int main() {
 
      int programNumber = Generate::randomNumber();
      int attempts {0};
+     int points {1000};
 
      do {
        Retry:
@@ -160,7 +210,16 @@ int main() {
        
        if ( (!correct) && (!attemptsComplete) ) {
 
+         
+         Hint::hintStatement(attemptsRemaining, randomNumber)
+         points -= 40;
          int attemptsRemaining = Attempts::attemptsLeft(constants::maxChances, attempts);
+
+         if ( (attemptsRemaining == 16) || (attemptsRemaining == 12) || (attemptsRemaining == 8) || (attemptsRemaining == 4) ) {
+
+           Hint::hintStatement(attemptsRemaining, randomNumber);
+         }
+         
          Digits::digitsCorrect(number, randomNumber);
          cout << "Sorry, your number isn't what I am thinking off!\n";
          Proximity::valueProximity(number, randomNumber);
