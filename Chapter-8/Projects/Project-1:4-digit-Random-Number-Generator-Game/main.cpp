@@ -255,6 +255,7 @@ int main() {
      int points {1000};
 
      do {
+       cout << "Your 20 chances start now!\n";
        Retry:
        int number = Guess::guessNumber(programNumber);
        attempts++;
