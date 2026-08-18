@@ -300,12 +300,43 @@ int main() {
 
      string_view award = Award::awardsClassification(points);
      Result::finalResult(points, award);
-     string play = Replay::playAgain();
-     
-     
-    
-  }
 
+     static int replayAttempts {0};
+
+     while (replayAttempts < constants::maxMenuChances) {
+
+       replayTry:
+       string play = Replay::playAgain();
+       bool replayReady {ready == "yes" || ready == "no"};
+       bool notReplayEmpty {cin};
+       replayAttempts++;
+       bool replayFinished {replayAttempts == constants::maxMenuChances};
+
+       if ( ((!replayReady) || (!notReplayEmpty)) && (!replayFinished) ) {
+
+         cout << "Sorry, that's invalid input so please try again, you have " << constants::maxMenuChances - replayAttempts << " left!\n";     //Continues until user uses all attempts if invalid input
+         goto replayTry;
+      }
+
+      else if ( ((!replayReady) || (!notReplayEmpty)) && (replayFinished) ) {
+
+        cout << "Sorry, you used all your attempts to enter a valid input, come back later when you're ready to type something valid!\n";
+        exit(0);
+     }
+
+     else if (play == "no") {
+
+        cout << "Sorry you had to go, hopefully you can play next time!\n";              //Program stops if user types no
+        exit(0);
+       }
+
+      else {
+
+        continue;              //typing yes forces the program out of the while loop
+      }
+    }
+     
+  }
   
   return 0;
 }
