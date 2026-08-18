@@ -256,7 +256,7 @@ int main() {
 
      do {
        Retry:
-       int number = Guess::GuessNumber(programNumber);
+       int number = Guess::guessNumber(programNumber);
        attempts++;
        
        bool correct {number == programNumber};
@@ -265,7 +265,7 @@ int main() {
        if ( (!correct) && (!attemptsComplete) ) {
 
          
-         Hint::hintStatement(attemptsRemaining, programNumber)
+         Hint::hintStatement(attemptsRemaining, programNumber);
          points -= 40;
          int attemptsRemaining = Attempts::attemptsLeft(constants::maxChances, attempts);
 
