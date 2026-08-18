@@ -1,9 +1,10 @@
 #ifndef READYMENU
 #define READYMENU
+#include <string>
 
 namespace Menu {
 
-  char readyMenu();
+  std::string readyMenu();
 }
 
 #endif
