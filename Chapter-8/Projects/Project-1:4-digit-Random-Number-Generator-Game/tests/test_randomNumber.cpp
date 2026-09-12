@@ -12,7 +12,7 @@ static_assert(constants::minNumber < constants::maxNumber);
 int main()
 {
     // Runtime tests
-    for (int test{ 0 }; test < 1000; ++test)
+    for (int test{ 0 }; test <= 1000; ++test)
     {
         int number{ Generate::randomNumber() };
 
