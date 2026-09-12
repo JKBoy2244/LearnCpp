@@ -16,21 +16,21 @@ int main() {
 
       std::ostringstream capturedOutput {};
       std::streambuf* originalBuffer {std::cout.rdbuf(capturedOutput.rdbuf())};
-      Proximity::valueProximity(j, i);
+      Proximity::valueProximity(j, randomNum);
       std::cout.rdbuf(originalBuffer);
       std::string output {capturedOutput.str()};
 
-      if ( abs(j -i ) <= 100 ) {
+      if ( abs(j -randomNum ) <= 100 ) {
 
        assert(output.find("Your guess is within 100 from the number I am thinking of") != std::string::npos);
       }  
 
-     else if ( ( abs(j -i ) > 100) && ( abs(j -i ) <= 500) ) {
+     else if ( ( abs(j -randomNum ) > 100) && ( abs(j -randomNum ) <= 500) ) {
 
        assert(output.find("Your guess is extremely very close to the number I am thinking of") != std::string::npos);
      }
 
-     else if ( ( abs(j -i ) > 500) && ( abs(j -i ) <= 1000) ) {
+     else if ( ( abs(j -randomNum ) > 500) && ( abs(j -randomNum ) <= 1000) ) {
 
        assert(output.find("Your guess is  close to the number I am thinking of") != std::string::npos);
      }
