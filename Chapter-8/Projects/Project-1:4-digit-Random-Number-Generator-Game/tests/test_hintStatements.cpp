@@ -5,7 +5,7 @@
 
 int main() {
 
-   for (int i = 1000; i <= 9999; ++j) {
+   for (int i = 1000; i <= 9999; ++i) {
 
      for (int j = 20; j >= 0; --j) {
 
