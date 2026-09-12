@@ -1,19 +1,39 @@
 #include <cassert>
 #include <iostream>
 
-#include "../awardClassification.h"
+#include "../awardsClassification.h"
 
-int main() {
-
-    for (int awardTest {1000}; awardTest >= 0; --awardTest) 
+int main() 
+{
+    for (int awardTest{ 0 }; awardTest <= 1000; ++awardTest)
     {
+        if (awardTest >= 880)
+        {
+            assert(Award::awardsClassification(awardTest) == "platinum" );
+        }
+            
+        else if (awardTest >= 680)
+        {
+            assert(Award::awardsClassification(awardTest) == "gold");       
+        }
+            
+        else if (awardTest >= 480)
+        {
+            assert(Award::awardsClassification(awardTest) == "silver");
+        }
+            
+        else if (awardTest >= 300)
+        {
+            assert(Award::awardsClassification(awardTest) == "bronze");
+        }
+            
+        else
+        {
+            assert(Award::awardsClassification(awardTest) == "participation");
+        }
+    }
 
-        assert(Award::awardsClassification( (awardTest >= 880) && (awardTest <= 1000) ) == "platinum");
-        assert(Award::awardsClassification( (awardTest >= 680) && (awardTest <= 879) ) == "gold");
-        assert(Award::awardsClassification( (awardTest >= 480) && (awardTest <= 679) ) == "silver");
-        assert(Award::awardsClassification( (awardTest >= 300) && (awardTest <= 479 )) == "bronze");
-        assert(Award::awardsClassification( (awardTest < 300) == "participation");
-   }
+    std::cout << "All award classification tests passed!\n";
 
-    std::cout << "All award classification tests passed!";
+    return 0;
 }
