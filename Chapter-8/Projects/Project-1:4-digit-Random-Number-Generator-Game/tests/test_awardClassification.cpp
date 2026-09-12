@@ -1,7 +1,7 @@
 #include <cassert>
 #include <iostream>
 
-#include "../awardsClassification.h"
+#include "../awardsClassiciation.h"
 
 int main() 
 {
