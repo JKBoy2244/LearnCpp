@@ -8,7 +8,7 @@
 
 int main() {
 
-  for (int randomTest {1}; randomTest < 1000; ++randomTest) {
+  for (int randomTest {1}; randomTest < 5000; ++randomTest) {
 
     int randomNum {Generate::randomNumber()};
 
