@@ -1,5 +1,7 @@
 #include <cassert>
 #include <iostream>
+#include <sstream>
+#include <string>
 
 #include "../digitsCorrect.h"
 #include "../randomNumber.h"
@@ -11,37 +13,42 @@ int main() {
     int randomNum {Generate::randomNumber()};
 
     for (int num {1000}; num <= 9999; ++num) {
+      std::ostringstream capturedOutput {};
+      std::streambuf* originalBuffer {std::cout.rdbuf(capturedOutput.rdbuf())};
+      Digits::digitsCorrect(num, randomNum);
+      std::cout.rdbuf(originalBuffer);
+      std::string output {capturedOutput.str()};
 
        if ( (num / 1000) == (randomNum / 1000) ) {
 
-         assert(Digits::digitsCorrect(num, randomNum) == "First digit of your guess is correct!");
+         assert(output.find("First digit of your guess is correct!") != std::string::npos);
         } else {
 
-         assert(Digits::digitsCorrect(num, randomNum) == "First digit of your guess is incorrect!");
+         assert(output.find("First digit of your guess is incorrect!") != std::string::npos);
        }
 
        if ( ( (num / 100) % 10 ) == ( (randomNum / 100) % 10 ) ) {
 
-         assert(Digits::digitsCorrect(num, randomNum) == "Second digit of your guess is correct!");
+         assert(output.find("Second digit of your guess is correct!") != std::string::npos);
        } else {
 
-         assert(Digits::digitsCorrect(num, randomNum) == "Second digit of your guess is incorrect!");
+         assert(output.find("Second digit of your guess is incorrect!") != std::string::npos);
        }
 
       if ( ( (num / 10) % 10 ) == ( (randomNum / 10) % 10 ) ) {
 
-        assert(Digits::digitsCorrect(num, randomNum) == "Third digit of your guess is correct!");
+        assert(output.find("Third digit of your guess is correct!") != std::string::npos);
       } else {
 
-        assert(Digits::digitsCorrect(num, randomNum) == "Third digit of your guess is incorrect!");
+        assert(output.find("Third digit of your guess is incorrect!") != std::string::npos);
      }
 
      if ( ( (num / 1) % 10 ) == ( (randomNum / 1) % 10 ) ) {
 
-        assert(Digits::digitsCorrect(num, randomNum) == "Fourth digit of your guess is correct!");
+        assert(output.find("Fourth digit of your guess is correct!") != std::string::npos);
      } else {
  
-        assert(Digits::digitsCorrect(num, randomNum) == "Fourth digit of your guess is incorrect!");
+        assert(output.find("Fourth digit of your guess is incorrect!") != std::string::npos);
       }    
 
     }    
